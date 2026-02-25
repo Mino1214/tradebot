@@ -1,30 +1,31 @@
 {
   "result": {
-    "initial_capital_usdt": 1000,
-    "final_balance_usdt": 3371.97,
-    "growth_pct": 237.2,
-    "symbol": "BTCUSDT",
+    "initial_capital_usdt": 1000.0,
+    "final_balance_usdt": 3726.95,
+    "growth_pct": 272.7,
+    "symbol": "ETHUSDT",
     "tf": "4h",
     "source": "db",
-    "bars": 14170,
-    "bars_used": 13945,
-    "trades_count": 188,
-    "wins": 58,
-    "losses": 130,
-    "win_rate_pct": 30.85,
-    "total_pnl_pct": 181.15,
-    "avg_pnl_per_trade_pct": 0.96
+    "adaptive_filter": "ON",
+    "bars": 13693,
+    "bars_used": 13468,
+    "trades_count": 145,
+    "wins": 54,
+    "losses": 91,
+    "win_rate_pct": 37.24,
+    "total_pnl_pct": 222.87,
+    "avg_pnl_per_trade_pct": 1.54
   },
-  "symbol": "BTCUSDT",
+  "symbol": "ETHUSDT",
   "tf": "4h",
   "source": "db",
-  "bars": 14170,
+  "bars": 13693,
   "start_idx": 225,
-  "trades_count": 188,
-  "wins": 58,
-  "losses": 130,
-  "win_rate_pct": 30.85,
-  "total_pnl_pct": 181.15,
+  "trades_count": 145,
+  "wins": 54,
+  "losses": 91,
+  "win_rate_pct": 37.24,
+  "total_pnl_pct": 222.87,
   "params": {
     "ema_len": 200,
     "entry_len": 20,
@@ -39,2980 +40,2955 @@
     "breakout_atr_margin": 0.2,
     "use_ema_slope": true,
     "use_adx_rising": true,
-    "cooldown_bars": 0
+    "cooldown_bars": 1
   },
   "trades": [
     {
-      "time": 1571212800000,
-      "side": "SHORT",
-      "price": 8056.299835000001,
-      "action": "entry"
+      "time": 1578268800000,
+      "side": "LONG",
+      "price": 139.41,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1571587200000,
-      "side": "SHORT",
-      "price": 8233.284585,
+      "time": 1578499200000,
+      "side": "LONG",
+      "price": 137.83105,
       "action": "exit",
-      "pnl_pct": -2.247973081345975,
+      "pnl_pct": -1.1325945054156745,
       "via": "channel",
-      "balance": 977.5202691865402
+      "balance": 988.6740549458433,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1571832000000,
-      "side": "SHORT",
-      "price": 7417.159565,
-      "action": "entry"
+      "time": 1578758400000,
+      "side": "LONG",
+      "price": 146.29,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1571990400000,
-      "side": "SHORT",
-      "price": 7578.84753,
+      "time": 1579766400000,
+      "side": "LONG",
+      "price": 162.77857000000003,
       "action": "exit",
-      "pnl_pct": -2.231033092581334,
+      "pnl_pct": 11.271153188871446,
       "via": "channel",
-      "balance": 955.7114684942983
+      "balance": 1044.39153858163,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1572048000000,
+      "time": 1580068800000,
       "side": "LONG",
-      "price": 9563.07,
-      "action": "entry"
+      "price": 167.9,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1572105600000,
+      "time": 1581321600000,
       "side": "LONG",
-      "price": 8923.060904333333,
+      "price": 219.07041,
       "action": "exit",
-      "pnl_pct": -6.739137081171968,
-      "via": "stop",
-      "balance": 891.304762531986
-    },
-    {
-      "time": 1573214400000,
-      "side": "SHORT",
-      "price": 8816.919335,
-      "action": "entry"
-    },
-    {
-      "time": 1573401600000,
-      "side": "SHORT",
-      "price": 9082.4422866675,
-      "action": "exit",
-      "pnl_pct": -3.063047696095065,
-      "via": "stop",
-      "balance": 864.0036725380644
-    },
-    {
-      "time": 1573819200000,
-      "side": "SHORT",
-      "price": 8472.311725,
-      "action": "entry"
-    },
-    {
-      "time": 1574870400000,
-      "side": "SHORT",
-      "price": 7567.46184,
-      "action": "exit",
-      "pnl_pct": 10.635400236859603,
+      "pnl_pct": 30.47671828469327,
       "via": "channel",
-      "balance": 955.8939211736533
-    },
-    {
-      "time": 1576324800000,
-      "side": "SHORT",
-      "price": 7053.781345000001,
-      "action": "entry"
-    },
-    {
-      "time": 1576382400000,
-      "side": "SHORT",
-      "price": 7186.5995156725,
-      "action": "exit",
-      "pnl_pct": -1.9339027013600758,
-      "via": "stop",
-      "balance": 937.4078628099393
-    },
-    {
-      "time": 1576512000000,
-      "side": "SHORT",
-      "price": 6896.55,
-      "action": "entry"
-    },
-    {
-      "time": 1576684800000,
-      "side": "SHORT",
-      "price": 6954.805665,
-      "action": "exit",
-      "pnl_pct": -0.8951549311424011,
-      "via": "channel",
-      "balance": 929.0166101010794
-    },
-    {
-      "time": 1577044800000,
-      "side": "LONG",
-      "price": 7502.92,
-      "action": "entry"
-    },
-    {
-      "time": 1577116800000,
-      "side": "LONG",
-      "price": 7354.799427333334,
-      "action": "exit",
-      "pnl_pct": -2.0231607773955425,
-      "via": "stop",
-      "balance": 910.2211104300247
-    },
-    {
-      "time": 1577635200000,
-      "side": "LONG",
-      "price": 7465.92,
-      "action": "entry"
-    },
-    {
-      "time": 1577664000000,
-      "side": "LONG",
-      "price": 7301.780616666667,
-      "action": "exit",
-      "pnl_pct": -2.2473914682822502,
-      "via": "stop",
-      "balance": 889.7648788517165
-    },
-    {
-      "time": 1578182400000,
-      "side": "LONG",
-      "price": 7475.15,
-      "action": "entry"
-    },
-    {
-      "time": 1579420800000,
-      "side": "LONG",
-      "price": 8700.48758,
-      "action": "exit",
-      "pnl_pct": 16.39214704721646,
-      "via": "channel",
-      "balance": 1035.6164461675771
-    },
-    {
-      "time": 1580140800000,
-      "side": "LONG",
-      "price": 8934.04,
-      "action": "entry"
-    },
-    {
-      "time": 1580803200000,
-      "side": "LONG",
-      "price": 9189.163120000001,
-      "action": "exit",
-      "pnl_pct": 2.855629927781834,
-      "via": "channel",
-      "balance": 1065.189819341369
-    },
-    {
-      "time": 1581206400000,
-      "side": "LONG",
-      "price": 10058.79,
-      "action": "entry"
-    },
-    {
-      "time": 1581307200000,
-      "side": "LONG",
-      "price": 9824.731177000001,
-      "action": "exit",
-      "pnl_pct": -2.375720475655445,
-      "via": "stop",
-      "balance": 1039.883886698679
+      "balance": 1458.176685685136,
+      "filter_state": "STRONG"
     },
     {
       "time": 1581436800000,
       "side": "LONG",
-      "price": 10287.46,
-      "action": "entry"
+      "price": 239.1,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1581580800000,
+      "time": 1581868800000,
       "side": "LONG",
-      "price": 10159.947485,
+      "price": 249.875,
       "action": "exit",
-      "pnl_pct": -1.239494637160179,
+      "pnl_pct": 4.506482643245507,
       "via": "channel",
-      "balance": 1026.994581690356
+      "balance": 1523.8891649333893,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1582675200000,
+      "time": 1582718400000,
       "side": "SHORT",
-      "price": 9174.33054,
-      "action": "entry"
+      "price": 226.54667,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1583150400000,
       "side": "SHORT",
-      "price": 8832.944265,
+      "price": 228.56422499999996,
       "action": "exit",
-      "pnl_pct": 3.6729393175620766,
+      "pnl_pct": -0.9410397787533152,
       "via": "channel",
-      "balance": 1064.7154694704932
+      "balance": 1509.5487617072545,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1583668800000,
       "side": "SHORT",
-      "price": 8395.800000000001,
-      "action": "entry"
+      "price": 216.901495,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1584604800000,
+      "time": 1584057600000,
       "side": "SHORT",
-      "price": 5619.038114999999,
+      "price": 230.8515297475,
       "action": "exit",
-      "pnl_pct": 33.03974559279928,
-      "via": "channel",
-      "balance": 1416.4947518707227
+      "pnl_pct": -6.484749334773856,
+      "via": "stop",
+      "balance": 1411.6583084243564,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1585339200000,
+      "time": 1585353600000,
       "side": "SHORT",
-      "price": 6350.463180000001,
-      "action": "entry"
+      "price": 125.99697,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1585555200000,
       "side": "SHORT",
-      "price": 6354.405614999999,
+      "price": 133.45669499999997,
       "action": "exit",
-      "pnl_pct": -0.11213713081632726,
-      "via": "channel",
-      "balance": 1414.906335297811
-    },
-    {
-      "time": 1586491200000,
-      "side": "SHORT",
-      "price": 6916.12021,
-      "action": "entry"
-    },
-    {
-      "time": 1586692800000,
-      "side": "SHORT",
-      "price": 7017.62706,
-      "action": "exit",
-      "pnl_pct": -1.5184440933019328,
-      "via": "channel",
-      "balance": 1393.4217736237265
-    },
-    {
-      "time": 1586736000000,
-      "side": "SHORT",
-      "price": 6667.664500000001,
-      "action": "entry"
-    },
-    {
-      "time": 1586865600000,
-      "side": "SHORT",
-      "price": 6946.05045625,
-      "action": "exit",
-      "pnl_pct": -4.22727806504704,
+      "pnl_pct": -5.973545814922486,
       "via": "stop",
-      "balance": 1334.5179606337413
+      "balance": 1302.034435879301,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1587211200000,
+      "time": 1587240000000,
       "side": "LONG",
-      "price": 7238.83,
-      "action": "entry"
+      "price": 187.48,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1587369600000,
+      "time": 1587268800000,
       "side": "LONG",
-      "price": 6960.717900000001,
+      "price": 178.67728333333332,
       "action": "exit",
-      "pnl_pct": -3.8419482153883897,
-      "via": "channel",
-      "balance": 1283.2464716611357
-    },
-    {
-      "time": 1587398400000,
-      "side": "SHORT",
-      "price": 6763.326645,
-      "action": "entry"
-    },
-    {
-      "time": 1587556800000,
-      "side": "SHORT",
-      "price": 7109.242844999999,
-      "action": "exit",
-      "pnl_pct": -5.167170210249538,
+      "pnl_pct": -4.742911596616171,
       "via": "stop",
-      "balance": 1216.9389422533832
+      "balance": 1240.2800936280457,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1587643200000,
+      "time": 1588867200000,
       "side": "LONG",
-      "price": 7528.14,
-      "action": "entry"
+      "price": 213.2,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1589068800000,
       "side": "LONG",
-      "price": 8617.339175000001,
+      "price": 185.84703000000002,
       "action": "exit",
-      "pnl_pct": 14.468370341146692,
-      "via": "channel",
-      "balance": 1393.010175244236
-    },
-    {
-      "time": 1589443200000,
-      "side": "LONG",
-      "price": 9681.12,
-      "action": "entry"
-    },
-    {
-      "time": 1589500800000,
-      "side": "LONG",
-      "price": 9251.729154666667,
-      "action": "exit",
-      "pnl_pct": -4.483101109523123,
+      "pnl_pct": -12.873286621229704,
       "via": "stop",
-      "balance": 1330.5601206220917
+      "balance": 1160.4476879486485,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1590350400000,
-      "side": "SHORT",
-      "price": 8707.014315000002,
-      "action": "entry"
-    },
-    {
-      "time": 1590566400000,
-      "side": "SHORT",
-      "price": 9149.562495,
-      "action": "exit",
-      "pnl_pct": -5.135230443024576,
-      "via": "stop",
-      "balance": 1262.2327922451616
-    },
-    {
-      "time": 1590667200000,
+      "time": 1590710400000,
       "side": "LONG",
-      "price": 9494.98,
-      "action": "entry"
+      "price": 221.92,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1591531200000,
       "side": "LONG",
-      "price": 9490.962145,
+      "price": 237.271305,
       "action": "exit",
-      "pnl_pct": -0.04231557096486832,
+      "pnl_pct": 6.917495043258843,
       "via": "channel",
-      "balance": 1261.6986712322173
+      "balance": 1264.8037726301459,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1591891200000,
-      "side": "SHORT",
-      "price": 9276.349505,
-      "action": "entry"
-    },
-    {
-      "time": 1592265600000,
-      "side": "SHORT",
-      "price": 9580.3439497525,
-      "action": "exit",
-      "pnl_pct": -3.3287557012062416,
-      "via": "stop",
-      "balance": 1219.6998047815314
-    },
-    {
-      "time": 1592856000000,
+      "time": 1592812800000,
       "side": "LONG",
-      "price": 9686.99,
-      "action": "entry"
+      "price": 236.52,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1592985600000,
       "side": "LONG",
-      "price": 9332.59137,
+      "price": 237.90099000000004,
       "action": "exit",
-      "pnl_pct": -3.7066477172284404,
-      "via": "stop",
-      "balance": 1174.489829810557
-    },
-    {
-      "time": 1593043200000,
-      "side": "SHORT",
-      "price": 9095.100175,
-      "action": "entry"
-    },
-    {
-      "time": 1593460800000,
-      "side": "SHORT",
-      "price": 9194.074739999998,
-      "action": "exit",
-      "pnl_pct": -1.1387879192712451,
+      "pnl_pct": 0.5838787417554648,
       "via": "channel",
-      "balance": 1161.114881515605
+      "balance": 1272.1886929834545,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1594209600000,
-      "side": "LONG",
-      "price": 9410.92,
-      "action": "entry"
+      "time": 1593273600000,
+      "side": "SHORT",
+      "price": 217.61114,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1594296000000,
-      "side": "LONG",
-      "price": 9206.3945,
+      "time": 1593345600000,
+      "side": "SHORT",
+      "price": 226.27308,
       "action": "exit",
-      "pnl_pct": -2.222167405541628,
+      "pnl_pct": -4.032483418159686,
       "via": "stop",
-      "balance": 1135.3129650776718
+      "balance": 1205.4976554635164,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1595304000000,
+      "time": 1593619200000,
       "side": "LONG",
-      "price": 9314.87,
-      "action": "entry"
+      "price": 231.14,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1598040000000,
+      "time": 1593691200000,
       "side": "LONG",
-      "price": 11532.760735000002,
+      "price": 224.97745500000002,
       "action": "exit",
-      "pnl_pct": 23.810216728735888,
+      "pnl_pct": -2.714795150663812,
+      "via": "stop",
+      "balance": 1189.1342595175715,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1594036800000,
+      "side": "LONG",
+      "price": 238.76,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1594872000000,
+      "side": "LONG",
+      "price": 232.43372500000004,
+      "action": "exit",
+      "pnl_pct": -2.698288567225824,
+      "via": "stop",
+      "balance": 1173.0911226308074,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1595692800000,
+      "side": "LONG",
+      "price": 296.77,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1596801600000,
+      "side": "LONG",
+      "price": 385.55712500000004,
+      "action": "exit",
+      "pnl_pct": 29.917823567072166,
       "via": "channel",
-      "balance": 1405.6334426121032
+      "balance": 1629.3434546853798,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1598817600000,
+      "time": 1597348800000,
       "side": "LONG",
-      "price": 11714.14,
-      "action": "entry"
+      "price": 425.34,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1599033600000,
+      "time": 1597564800000,
       "side": "LONG",
-      "price": 11411.781255,
+      "price": 418.22078500000003,
       "action": "exit",
-      "pnl_pct": -2.6298284304946464,
-      "via": "stop",
-      "balance": 1368.6676947097494
-    },
-    {
-      "time": 1599163200000,
-      "side": "SHORT",
-      "price": 10136.009460000001,
-      "action": "entry"
-    },
-    {
-      "time": 1599508800000,
-      "side": "SHORT",
-      "price": 10383.94938,
-      "action": "exit",
-      "pnl_pct": -2.497378213535982,
+      "pnl_pct": -1.6737703954483332,
       "via": "channel",
-      "balance": 1334.4868858863629
+      "balance": 1593.8905457852711,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1600689600000,
+      "time": 1598673600000,
+      "side": "LONG",
+      "price": 403.36,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1599134400000,
+      "side": "LONG",
+      "price": 403.488155,
+      "action": "exit",
+      "pnl_pct": 0.031771866322885874,
+      "via": "channel",
+      "balance": 1594.143750172041,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1599321600000,
       "side": "SHORT",
-      "price": 10410.402195,
-      "action": "entry"
+      "price": 323.25829000000004,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1600963200000,
+      "time": 1599696000000,
       "side": "SHORT",
-      "price": 10723.3505240975,
+      "price": 370.851623145,
       "action": "exit",
-      "pnl_pct": -3.057640623060174,
+      "pnl_pct": -14.780394871190436,
       "via": "stop",
-      "balance": 1293.6830727540907
+      "balance": 1287.8367867552604,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1601251200000,
+      "time": 1599926400000,
       "side": "LONG",
-      "price": 10881.81,
-      "action": "entry"
+      "price": 384.68,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1601323200000,
+      "time": 1599998400000,
       "side": "LONG",
-      "price": 10653.897719666666,
+      "price": 360.47967000000006,
       "action": "exit",
-      "pnl_pct": -2.143361876836744,
+      "pnl_pct": -6.337859977155009,
       "via": "stop",
-      "balance": 1265.9547629655895
+      "balance": 1206.2154944764195,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1601928000000,
+      "time": 1600358400000,
       "side": "LONG",
-      "price": 10785.0,
-      "action": "entry"
+      "price": 389.12,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1601985600000,
+      "time": 1600603200000,
       "side": "LONG",
-      "price": 10641.448613999999,
+      "price": 370.324745,
       "action": "exit",
-      "pnl_pct": -1.3803379812180228,
-      "via": "stop",
-      "balance": 1248.4803085473368
+      "pnl_pct": -4.830195055509868,
+      "via": "channel",
+      "balance": 1177.0842138899225,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1602158400000,
+      "time": 1602230400000,
       "side": "LONG",
-      "price": 10892.69,
-      "action": "entry"
+      "price": 359.3,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1602489600000,
       "side": "LONG",
-      "price": 11240.69684,
+      "price": 366.23679000000004,
       "action": "exit",
-      "pnl_pct": 3.1948659146638705,
+      "pnl_pct": 1.9306401335931063,
       "via": "channel",
-      "balance": 1288.367580376406
-    },
-    {
-      "time": 1602504000000,
-      "side": "LONG",
-      "price": 11551.71,
-      "action": "entry"
-    },
-    {
-      "time": 1602676800000,
-      "side": "LONG",
-      "price": 11287.059647,
-      "action": "exit",
-      "pnl_pct": -2.339835941767622,
-      "via": "stop",
-      "balance": 1258.2218926686771
+      "balance": 1199.8094741294701,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1603108800000,
       "side": "LONG",
-      "price": 11801.12,
-      "action": "entry"
+      "price": 383.76,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1603166400000,
+      "side": "LONG",
+      "price": 374.8937926666667,
+      "action": "exit",
+      "pnl_pct": -2.3591725435315687,
+      "via": "stop",
+      "balance": 1185.6566862852935,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1603281600000,
+      "side": "LONG",
+      "price": 392.49,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1603713600000,
+      "side": "LONG",
+      "price": 393.693055,
+      "action": "exit",
+      "pnl_pct": 0.3065186374175154,
+      "via": "channel",
+      "balance": 1190.3812226203202,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1604260800000,
+      "side": "LONG",
+      "price": 396.82,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1604304000000,
       "side": "LONG",
-      "price": 13399.306995,
+      "price": 384.04788,
       "action": "exit",
-      "pnl_pct": 13.542672178572882,
-      "via": "channel",
-      "balance": 1428.6187588718312
-    },
-    {
-      "time": 1604433600000,
-      "side": "LONG",
-      "price": 14016.55,
-      "action": "entry"
-    },
-    {
-      "time": 1604462400000,
-      "side": "LONG",
-      "price": 13562.649283,
-      "action": "exit",
-      "pnl_pct": -3.2866764836829336,
+      "pnl_pct": -3.2669845209444923,
       "via": "stop",
-      "balance": 1381.6646820825076
+      "balance": 1151.4916523370846,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1604548800000,
+      "time": 1604577600000,
       "side": "LONG",
-      "price": 14469.71,
-      "action": "entry"
+      "price": 414.53,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1604764800000,
+      "time": 1605456000000,
       "side": "LONG",
-      "price": 14647.41263,
+      "price": 444.867455,
       "action": "exit",
-      "pnl_pct": 1.228100839616009,
+      "pnl_pct": 7.3185185631920575,
       "via": "channel",
-      "balance": 1398.632917643841
+      "balance": 1193.6277175020327,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1605542400000,
+      "time": 1605628800000,
       "side": "LONG",
-      "price": 16776.35,
-      "action": "entry"
+      "price": 483.76,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1606032000000,
+      "time": 1605672000000,
       "side": "LONG",
-      "price": 17916.2374,
+      "price": 466.09616866666664,
       "action": "exit",
-      "pnl_pct": 6.794609077659939,
-      "via": "channel",
-      "balance": 1493.6645568292095
-    },
-    {
-      "time": 1608177600000,
-      "side": "LONG",
-      "price": 22495.01,
-      "action": "entry"
-    },
-    {
-      "time": 1608537600000,
-      "side": "LONG",
-      "price": 22651.6685,
-      "action": "exit",
-      "pnl_pct": 0.6964144492489729,
-      "via": "channel",
-      "balance": 1504.0666526262787
-    },
-    {
-      "time": 1608883200000,
-      "side": "LONG",
-      "price": 24605.23,
-      "action": "entry"
-    },
-    {
-      "time": 1610294400000,
-      "side": "LONG",
-      "price": 37513.14404500001,
-      "action": "exit",
-      "pnl_pct": 52.460042214602375,
-      "via": "channel",
-      "balance": 2293.1006535297815
-    },
-    {
-      "time": 1612598400000,
-      "side": "LONG",
-      "price": 40264.34,
-      "action": "entry"
-    },
-    {
-      "time": 1612670400000,
-      "side": "LONG",
-      "price": 38127.24417466667,
-      "action": "exit",
-      "pnl_pct": -5.354986373483685,
+      "pnl_pct": -3.6995127649779644,
       "via": "stop",
-      "balance": 2170.3054260029962
+      "balance": 1171.5485126143813,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1612785600000,
+      "time": 1605859200000,
       "side": "LONG",
-      "price": 43785.81,
-      "action": "entry"
+      "price": 506.19,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1613995200000,
+      "time": 1606334400000,
       "side": "LONG",
-      "price": 53250.40148,
+      "price": 569.505105,
       "action": "exit",
-      "pnl_pct": 21.615659228412134,
+      "pnl_pct": 12.50816985716825,
       "via": "channel",
-      "balance": 2639.4312511035423
+      "balance": 1318.0877905313162,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1614758400000,
+      "time": 1608192000000,
       "side": "LONG",
-      "price": 51721.4,
-      "action": "entry"
+      "price": 663.62,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1614844800000,
+      "time": 1608220800000,
       "side": "LONG",
-      "price": 48794.76241400001,
+      "price": 633.199242,
       "action": "exit",
-      "pnl_pct": -5.705612714684214,
+      "pnl_pct": -4.631746993806674,
       "via": "stop",
-      "balance": 2488.83552604523
+      "balance": 1238.722151433549,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1616673600000,
+      "time": 1609070400000,
+      "side": "LONG",
+      "price": 699.83,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1610323200000,
+      "side": "LONG",
+      "price": 1104.437505,
+      "action": "exit",
+      "pnl_pct": 57.81511295600361,
+      "via": "channel",
+      "balance": 1596.8064569647213,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1612526400000,
+      "side": "LONG",
+      "price": 1745.24,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1612656000000,
+      "side": "LONG",
+      "price": 1627.4058900000002,
+      "action": "exit",
+      "pnl_pct": -6.751742453759929,
+      "via": "channel",
+      "balance": 1456.6505196676744,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1613779200000,
+      "side": "LONG",
+      "price": 2024.88,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1613851200000,
+      "side": "LONG",
+      "price": 1913.62271,
+      "action": "exit",
+      "pnl_pct": -5.541741890304896,
+      "via": "stop",
+      "balance": 1375.9267076239069,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1616443200000,
       "side": "SHORT",
-      "price": 50998.817835,
-      "action": "entry"
+      "price": 1680.849155,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1616774400000,
+      "time": 1616760000000,
       "side": "SHORT",
-      "price": 53957.26565191749,
+      "price": 1643.12115,
       "action": "exit",
-      "pnl_pct": -5.853939507905632,
-      "via": "stop",
-      "balance": 2343.1405998992773
+      "pnl_pct": 2.1956779006275404,
+      "via": "channel",
+      "balance": 1391.032166947972,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1617091200000,
+      "time": 1617019200000,
       "side": "LONG",
-      "price": 59326.4,
-      "action": "entry"
+      "price": 1791.42,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1617177600000,
+      "time": 1617782400000,
       "side": "LONG",
-      "price": 56932.171674000005,
+      "price": 1981.12894,
       "action": "exit",
-      "pnl_pct": -4.08364604275169,
-      "via": "stop",
-      "balance": 2247.4550315153824
+      "pnl_pct": 10.58986390684485,
+      "via": "channel",
+      "balance": 1538.340580328197,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1618027200000,
       "side": "LONG",
-      "price": 60614.65,
-      "action": "entry"
-    },
-    {
-      "time": 1618084800000,
-      "side": "LONG",
-      "price": 58594.977855000005,
-      "action": "exit",
-      "pnl_pct": -3.3802966650863104,
-      "via": "stop",
-      "balance": 2171.4843840357535
+      "price": 2169.49,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1618704000000,
-      "side": "SHORT",
-      "price": 54822.03527,
-      "action": "entry"
-    },
-    {
-      "time": 1619395200000,
-      "side": "SHORT",
-      "price": 52446.630209999996,
-      "action": "exit",
-      "pnl_pct": 4.28508101734754,
-      "via": "channel",
-      "balance": 2264.534249170736
-    },
-    {
-      "time": 1619784000000,
       "side": "LONG",
-      "price": 57138.23,
-      "action": "entry"
+      "price": 2076.8137403333335,
+      "action": "exit",
+      "pnl_pct": -4.319639527855372,
+      "via": "stop",
+      "balance": 1471.8898125473004,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1620086400000,
+      "time": 1619424000000,
       "side": "LONG",
-      "price": 54469.75349900001,
-      "action": "exit",
-      "pnl_pct": -4.717853120610195,
-      "via": "stop",
-      "balance": 2157.696849428948
-    },
-    {
-      "time": 1620129600000,
-      "side": "SHORT",
-      "price": 53854.89908,
-      "action": "entry"
-    },
-    {
-      "time": 1620216000000,
-      "side": "SHORT",
-      "price": 57624.898049999996,
-      "action": "exit",
-      "pnl_pct": -7.053816639435463,
-      "via": "stop",
-      "balance": 2005.4968700353543
+      "price": 2518.65,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1620849600000,
-      "side": "SHORT",
-      "price": 49570.962120000004,
-      "action": "entry"
-    },
-    {
-      "time": 1621872000000,
-      "side": "SHORT",
-      "price": 39583.36179,
+      "side": "LONG",
+      "price": 3827.075505,
       "action": "exit",
-      "pnl_pct": 20.10814057670374,
+      "pnl_pct": 51.949477100827814,
       "via": "channel",
-      "balance": 2408.764999923457
+      "balance": 2236.5288736659772,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1622188800000,
+      "time": 1621396800000,
       "side": "SHORT",
-      "price": 35356.622845,
-      "action": "entry"
+      "price": 2983.817345,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1622448000000,
+      "time": 1621857600000,
       "side": "SHORT",
-      "price": 36851.4165,
+      "price": 2510.1244349999997,
       "action": "exit",
-      "pnl_pct": -4.279901356378693,
+      "pnl_pct": 15.833315693037806,
       "via": "channel",
-      "balance": 2305.6722340197575
+      "balance": 2696.880553939497,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1623096000000,
+      "time": 1623110400000,
       "side": "SHORT",
-      "price": 33534.18452,
-      "action": "entry"
+      "price": 2488.79498,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1623240000000,
+      "time": 1623614400000,
       "side": "SHORT",
-      "price": 36357.42963,
+      "price": 2509.964355,
       "action": "exit",
-      "pnl_pct": -8.473242929240483,
-      "via": "stop",
-      "balance": 2110.3070244792175
-    },
-    {
-      "time": 1624176000000,
-      "side": "SHORT",
-      "price": 33839.072,
-      "action": "entry"
-    },
-    {
-      "time": 1624219200000,
-      "side": "SHORT",
-      "price": 35926.689033999995,
-      "action": "exit",
-      "pnl_pct": -6.222361430840473,
-      "via": "stop",
-      "balance": 1978.9960941157055
-    },
-    {
-      "time": 1624248000000,
-      "side": "SHORT",
-      "price": 32969.22714,
-      "action": "entry"
-    },
-    {
-      "time": 1624406400000,
-      "side": "SHORT",
-      "price": 33956.019525,
-      "action": "exit",
-      "pnl_pct": -3.044593322590111,
+      "pnl_pct": -0.9010378581883407,
       "via": "channel",
-      "balance": 1918.7437111799397
+      "balance": 2672.580639158383,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1626220800000,
+      "time": 1624032000000,
       "side": "SHORT",
-      "price": 31792.096,
-      "action": "entry"
+      "price": 2151.713605,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1626278400000,
+      "time": 1624824000000,
       "side": "SHORT",
-      "price": 33090.52766199999,
+      "price": 1981.820415,
       "action": "exit",
-      "pnl_pct": -4.136201660316108,
+      "pnl_pct": 7.849640570058343,
+      "via": "channel",
+      "balance": 2945.3050055129543,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1625184000000,
+      "side": "SHORT",
+      "price": 2039.069955,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1625284800000,
+      "side": "SHORT",
+      "price": 2196.0374699999998,
+      "action": "exit",
+      "pnl_pct": -7.751871515315875,
       "via": "stop",
-      "balance": 1839.3806019409042
+      "balance": 2648.4938678229637,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1626192000000,
+      "side": "SHORT",
+      "price": 1922.6681850000002,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1626307200000,
+      "side": "SHORT",
+      "price": 2021.8252590925,
+      "action": "exit",
+      "pnl_pct": -5.209868931763441,
+      "via": "stop",
+      "balance": 2510.5108086435953,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1626696000000,
       "side": "SHORT",
-      "price": 30657.653505000002,
-      "action": "entry"
+      "price": 1818.200445,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1626854400000,
+      "time": 1626840000000,
       "side": "SHORT",
-      "price": 31515.75,
+      "price": 1875.03705,
       "action": "exit",
-      "pnl_pct": -2.850388575030429,
+      "pnl_pct": -3.1775700351211467,
       "via": "channel",
-      "balance": 1786.9511074118548
+      "balance": 2470.624189051627,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1627185600000,
+      "time": 1627833600000,
       "side": "LONG",
-      "price": 34672.76,
-      "action": "entry"
+      "price": 2654.83,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1627632000000,
+      "time": 1627848000000,
       "side": "LONG",
-      "price": 38618.021329999996,
+      "price": 2524.1006516666666,
       "action": "exit",
-      "pnl_pct": 11.378561527839128,
-      "via": "channel",
-      "balance": 1990.2804386411156
+      "pnl_pct": -4.971722029258309,
+      "via": "stop",
+      "balance": 2310.9418518641837,
+      "filter_state": "STRONG"
     },
     {
       "time": 1628884800000,
       "side": "LONG",
-      "price": 47792.52,
-      "action": "entry"
+      "price": 3324.12,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1629000000000,
       "side": "LONG",
-      "price": 45765.355875,
+      "price": 3161.87827,
       "action": "exit",
-      "pnl_pct": -4.289448154891878,
+      "pnl_pct": -4.880742271638802,
+      "via": "channel",
+      "balance": 2198.150736027256,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1630656000000,
+      "side": "LONG",
+      "price": 3958.79,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1631001600000,
+      "side": "LONG",
+      "price": 3751.16348,
+      "action": "exit",
+      "pnl_pct": -5.292050460312135,
       "via": "stop",
-      "balance": 1904.9083910886504
+      "balance": 2046.9253160396852,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1629460800000,
+      "time": 1631736000000,
       "side": "LONG",
-      "price": 48752.38,
-      "action": "entry"
+      "price": 3614.72,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1629835200000,
+      "time": 1631865600000,
       "side": "LONG",
-      "price": 47695.50032000001,
+      "price": 3436.803405333333,
       "action": "exit",
-      "pnl_pct": -2.1678524822787955,
-      "via": "channel",
-      "balance": 1863.612787247298
-    },
-    {
-      "time": 1630872000000,
-      "side": "LONG",
-      "price": 51799.57,
-      "action": "entry"
-    },
-    {
-      "time": 1631016000000,
-      "side": "LONG",
-      "price": 46620.678,
-      "action": "exit",
-      "pnl_pct": -10.042922537108257,
+      "pnl_pct": -4.969517351215794,
       "via": "stop",
-      "balance": 1676.4515986324077
+      "balance": 1996.0641616661746,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1632110400000,
+      "time": 1632254400000,
       "side": "SHORT",
-      "price": 44803.307140000004,
-      "action": "entry"
+      "price": 2764.09726,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1632355200000,
+      "time": 1632326400000,
       "side": "SHORT",
-      "price": 44075.976975,
+      "price": 3056.60079663,
       "action": "exit",
-      "pnl_pct": 1.5741720802041899,
-      "via": "channel",
-      "balance": 1702.8418316362158
-    },
-    {
-      "time": 1633075200000,
-      "side": "LONG",
-      "price": 47482.27,
-      "action": "entry"
-    },
-    {
-      "time": 1634817600000,
-      "side": "LONG",
-      "price": 63008.689895,
-      "action": "exit",
-      "pnl_pct": 32.69940526221684,
-      "via": "channel",
-      "balance": 2259.660983137498
-    },
-    {
-      "time": 1636329600000,
-      "side": "LONG",
-      "price": 65274.99,
-      "action": "entry"
-    },
-    {
-      "time": 1636574400000,
-      "side": "LONG",
-      "price": 63458.29164833334,
-      "action": "exit",
-      "pnl_pct": -2.831730255104185,
+      "pnl_pct": -10.63756351181289,
       "via": "stop",
-      "balance": 2195.673479415209
+      "balance": 1720.0317908522672,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1637020800000,
-      "side": "SHORT",
-      "price": 60913.218155,
-      "action": "entry"
+      "time": 1634198400000,
+      "side": "LONG",
+      "price": 3740.65,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1637424000000,
-      "side": "SHORT",
-      "price": 59490.700485,
+      "time": 1634472000000,
+      "side": "LONG",
+      "price": 3788.0250400000004,
       "action": "exit",
-      "pnl_pct": 2.286461759577879,
+      "pnl_pct": 1.2664921871867283,
       "via": "channel",
-      "balance": 2245.876713887231
+      "balance": 1748.3510795750205,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1634760000000,
+      "side": "LONG",
+      "price": 4164.14,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1634904000000,
+      "side": "LONG",
+      "price": 3968.0649750000002,
+      "action": "exit",
+      "pnl_pct": -4.756277790060278,
+      "via": "stop",
+      "balance": 1665.1946454849146,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1635508800000,
+      "side": "LONG",
+      "price": 4444.49,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1635667200000,
+      "side": "LONG",
+      "price": 4194.109229666667,
+      "action": "exit",
+      "pnl_pct": -5.6806692543995085,
+      "via": "stop",
+      "balance": 1542.2221851573556,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1635883200000,
+      "side": "LONG",
+      "price": 4593.88,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1636185600000,
+      "side": "LONG",
+      "price": 4369.814,
+      "action": "exit",
+      "pnl_pct": -4.92502666792458,
+      "via": "stop",
+      "balance": 1504.244758208531,
+      "filter_state": "WEAK"
     },
     {
       "time": 1638590400000,
       "side": "SHORT",
-      "price": 47218.309035000006,
-      "action": "entry"
+      "price": 3891.1234650000006,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1638820800000,
       "side": "SHORT",
-      "price": 50449.93236,
+      "price": 4347.3726,
       "action": "exit",
-      "pnl_pct": -6.897453501688022,
+      "pnl_pct": -11.781273784044325,
+      "via": "stop",
+      "balance": 1273.8598068578438,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1640664000000,
+      "side": "SHORT",
+      "price": 3912.572735,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1641139200000,
+      "side": "SHORT",
+      "price": 3798.908505,
+      "action": "exit",
+      "pnl_pct": 2.856530296433539,
       "via": "channel",
-      "balance": 2090.9684118416203
+      "balance": 1310.2479981748277,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1641398400000,
       "side": "SHORT",
-      "price": 44650.88339,
-      "action": "entry"
+      "price": 3651.79319,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1641744000000,
+      "time": 1641916800000,
       "side": "SHORT",
-      "price": 42700.289475,
+      "price": 3236.4174,
       "action": "exit",
-      "pnl_pct": 4.32070531057399,
+      "pnl_pct": 11.33023559285666,
       "via": "channel",
-      "balance": 2181.312995054486
+      "balance": 1384.4750906967759,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1642708800000,
+      "time": 1642723200000,
       "side": "SHORT",
-      "price": 40641.359155000006,
-      "action": "entry"
+      "price": 2834.62198,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1643054400000,
+      "time": 1643184000000,
       "side": "SHORT",
-      "price": 36666.63415499999,
+      "price": 2545.81227,
       "action": "exit",
-      "pnl_pct": 9.734867617466508,
+      "pnl_pct": 10.143721777446563,
       "via": "channel",
-      "balance": 2393.6609274456337
+      "balance": 1567.0435823586072,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1643990400000,
+      "time": 1644004800000,
       "side": "LONG",
-      "price": 40701.71,
-      "action": "entry"
+      "price": 2993.65,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1645084800000,
+      "time": 1644595200000,
       "side": "LONG",
-      "price": 43136.6209,
+      "price": 2990.6339350000003,
       "action": "exit",
-      "pnl_pct": 5.982330717800315,
+      "pnl_pct": -0.10074875152405252,
       "via": "channel",
-      "balance": 2536.857640388198
+      "balance": 1564.9911724600238,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1645113600000,
+      "time": 1645185600000,
       "side": "SHORT",
-      "price": 41156.51145,
-      "action": "entry"
+      "price": 2797.18071,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1646049600000,
+      "time": 1646078400000,
       "side": "SHORT",
-      "price": 40813.1964,
+      "price": 2967.3076223549997,
       "action": "exit",
-      "pnl_pct": 0.7845617425300443,
-      "via": "channel",
-      "balance": 2556.7608548971343
+      "pnl_pct": -6.135152718258998,
+      "via": "stop",
+      "balance": 1440.172194465021,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1646064000000,
-      "side": "LONG",
-      "price": 41306.4,
-      "action": "entry"
-    },
-    {
-      "time": 1646308800000,
-      "side": "LONG",
-      "price": 42528.22525,
-      "action": "exit",
-      "pnl_pct": 2.9579562731199083,
-      "via": "channel",
-      "balance": 2632.388722993238
-    },
-    {
-      "time": 1646553600000,
+      "time": 1646352000000,
       "side": "SHORT",
-      "price": 38311.73455,
-      "action": "entry"
+      "price": 2722.9178600000005,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1646784000000,
       "side": "SHORT",
-      "price": 41219.09925,
+      "price": 2699.80923,
       "action": "exit",
-      "pnl_pct": -7.642526745254793,
-      "via": "stop",
-      "balance": 2431.2077107994087
+      "pnl_pct": 0.7990711146552223,
+      "via": "channel",
+      "balance": 1451.6801944722872,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1646798400000,
+      "time": 1647604800000,
       "side": "LONG",
-      "price": 41773.8,
-      "action": "entry"
-    },
-    {
-      "time": 1646884800000,
-      "side": "LONG",
-      "price": 39200.29005,
-      "action": "exit",
-      "pnl_pct": -6.2074800469434726,
-      "via": "stop",
-      "balance": 2280.290977251784
-    },
-    {
-      "time": 1647201600000,
-      "side": "SHORT",
-      "price": 37724.82815,
-      "action": "entry"
-    },
-    {
-      "time": 1647230400000,
-      "side": "SHORT",
-      "price": 39081.7311,
-      "action": "exit",
-      "pnl_pct": -3.6486676238720714,
-      "via": "stop",
-      "balance": 2197.090738634722
-    },
-    {
-      "time": 1647619200000,
-      "side": "LONG",
-      "price": 42020.3,
-      "action": "entry"
+      "price": 2894.0,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1647777600000,
       "side": "LONG",
-      "price": 41313.5329,
+      "price": 2852.9927900000002,
       "action": "exit",
-      "pnl_pct": -1.6819658593584637,
+      "pnl_pct": -1.4169733932273587,
       "via": "channel",
-      "balance": 2160.1364225117595
+      "balance": 1424.9392957287366,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1648411200000,
+      "time": 1647907200000,
       "side": "LONG",
-      "price": 46820.8,
-      "action": "entry"
+      "price": 3007.33,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1648728000000,
+      "time": 1648742400000,
       "side": "LONG",
-      "price": 46426.775,
+      "price": 3280.7787900000003,
       "action": "exit",
-      "pnl_pct": -0.8415597341352592,
+      "pnl_pct": 9.092743064445884,
       "via": "channel",
-      "balance": 2141.957584177511
+      "balance": 1593.375185409157,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1650528000000,
-      "side": "LONG",
-      "price": 42418.0,
-      "action": "entry"
-    },
-    {
-      "time": 1650571200000,
-      "side": "LONG",
-      "price": 40429.5751,
-      "action": "exit",
-      "pnl_pct": -4.735323648468551,
-      "via": "stop",
-      "balance": 2040.5289601537875
-    },
-    {
-      "time": 1650628800000,
+      "time": 1650254400000,
       "side": "SHORT",
-      "price": 39394.892700000004,
-      "action": "entry"
+      "price": 2889.73441,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1650297600000,
+      "side": "SHORT",
+      "price": 3006.0622799999996,
+      "action": "exit",
+      "pnl_pct": -4.077594557609022,
+      "via": "stop",
+      "balance": 1560.8894954878888,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1650844800000,
+      "side": "SHORT",
+      "price": 2871.893335,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1650902400000,
       "side": "SHORT",
-      "price": 40224.102,
+      "price": 3012.6955949999997,
       "action": "exit",
-      "pnl_pct": -2.1559429505846173,
-      "via": "channel",
-      "balance": 1996.5363198827142
+      "pnl_pct": -4.9552453642284595,
+      "via": "stop",
+      "balance": 1460.3398198122284,
+      "filter_state": "STRONG"
     },
     {
       "time": 1651348800000,
       "side": "SHORT",
-      "price": 37595.69275,
-      "action": "entry"
+      "price": 2723.73745,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1651464000000,
+      "time": 1651435200000,
       "side": "SHORT",
-      "price": 38910.805096375,
+      "price": 2843.315730725,
       "action": "exit",
-      "pnl_pct": -3.549814842794031,
+      "pnl_pct": -4.442449097833833,
       "via": "stop",
-      "balance": 1925.662977257744
+      "balance": 1376.0025107165047,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1651968000000,
+      "time": 1652054400000,
       "side": "SHORT",
-      "price": 34458.46215,
-      "action": "entry"
+      "price": 2455.6915400000003,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1652644800000,
+      "time": 1652630400000,
       "side": "SHORT",
-      "price": 31340.0622,
+      "price": 2104.43169,
       "action": "exit",
-      "pnl_pct": 9.004238397113097,
+      "pnl_pct": 14.261038167028598,
       "via": "channel",
-      "balance": 2099.054262454977
+      "balance": 1631.1044269188228,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1654948800000,
+      "time": 1654934400000,
       "side": "SHORT",
-      "price": 28378.10385,
-      "action": "entry"
+      "price": 1574.282465,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1655668800000,
+      "time": 1655654400000,
       "side": "SHORT",
-      "price": 20574.4821,
+      "price": 1100.3599049999998,
       "action": "exit",
-      "pnl_pct": 27.462473898714617,
+      "pnl_pct": 30.069070534931626,
       "via": "channel",
-      "balance": 2675.5064914015315
+      "balance": 2121.5623675474358,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1656561600000,
+      "time": 1656576000000,
       "side": "SHORT",
-      "price": 19413.78825,
-      "action": "entry"
+      "price": 1017.2211350000001,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1656633600000,
       "side": "SHORT",
-      "price": 20196.428084125,
+      "price": 1093.1194215675,
       "action": "exit",
-      "pnl_pct": -4.083402423017047,
+      "pnl_pct": -7.515093529279385,
       "via": "stop",
-      "balance": 2566.254794503663
+      "balance": 1962.124971344252,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1657584000000,
+      "side": "SHORT",
+      "price": 1085.1171700000002,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1657742400000,
+      "side": "SHORT",
+      "price": 1114.747095,
+      "action": "exit",
+      "pnl_pct": -2.7819647691766427,
+      "via": "channel",
+      "balance": 1907.5393459142374,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1658116800000,
       "side": "LONG",
-      "price": 22243.4,
-      "action": "entry"
+      "price": 1465.96,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1658390400000,
+      "time": 1658764800000,
       "side": "LONG",
-      "price": 22594.0973,
+      "price": 1493.1930300000001,
       "action": "exit",
-      "pnl_pct": 1.5766353165433333,
+      "pnl_pct": 1.8576925700564886,
       "via": "channel",
-      "balance": 2606.7152739062944
+      "balance": 1953.606427624176,
+      "filter_state": "STRONG"
     },
     {
       "time": 1659009600000,
       "side": "LONG",
-      "price": 23739.4,
-      "action": "entry"
+      "price": 1728.32,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1659297600000,
+      "time": 1659369600000,
       "side": "LONG",
-      "price": 23278.45495,
+      "price": 1620.9091400000002,
       "action": "exit",
-      "pnl_pct": -1.9416878691121175,
+      "pnl_pct": -6.214755369376026,
       "via": "channel",
-      "balance": 2556.100999650563
+      "balance": 1892.9004974455515,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1660939200000,
-      "side": "SHORT",
-      "price": 20814.48755,
-      "action": "entry"
-    },
-    {
-      "time": 1661112000000,
-      "side": "SHORT",
-      "price": 21720.248913774998,
-      "action": "exit",
-      "pnl_pct": -4.403792881321749,
-      "via": "stop",
-      "balance": 2443.535605788558
-    },
-    {
-      "time": 1661515200000,
-      "side": "SHORT",
-      "price": 20759.71495,
-      "action": "entry"
-    },
-    {
-      "time": 1661774400000,
-      "side": "SHORT",
-      "price": 20259.22455,
-      "action": "exit",
-      "pnl_pct": 2.362054207228867,
-      "via": "channel",
-      "balance": 2501.2532413702215
-    },
-    {
-      "time": 1663545600000,
-      "side": "SHORT",
-      "price": 18756.8169,
-      "action": "entry"
-    },
-    {
-      "time": 1663588800000,
-      "side": "SHORT",
-      "price": 19365.49480845,
-      "action": "exit",
-      "pnl_pct": -3.2967507383932655,
-      "via": "stop",
-      "balance": 2418.7931566662633
-    },
-    {
-      "time": 1665648000000,
-      "side": "SHORT",
-      "price": 18735.527550000003,
-      "action": "entry"
-    },
-    {
-      "time": 1665676800000,
-      "side": "SHORT",
-      "price": 19370.58045,
-      "action": "exit",
-      "pnl_pct": -3.4412857261264875,
-      "via": "stop",
-      "balance": 2335.5555730213828
-    },
-    {
-      "time": 1666771200000,
+      "time": 1659945600000,
       "side": "LONG",
-      "price": 20595.9,
-      "action": "entry"
+      "price": 1788.7,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1660032000000,
+      "side": "LONG",
+      "price": 1701.9486,
+      "action": "exit",
+      "pnl_pct": -4.897520491166052,
+      "via": "stop",
+      "balance": 1772.3837507838375,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1660348800000,
+      "side": "LONG",
+      "price": 1996.38,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1660492800000,
+      "side": "LONG",
+      "price": 1929.15494,
+      "action": "exit",
+      "pnl_pct": -3.3673478996984647,
+      "via": "channel",
+      "balance": 1712.701423777221,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1663243200000,
+      "side": "SHORT",
+      "price": 1491.03411,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1664236800000,
+      "side": "SHORT",
+      "price": 1385.5624349999998,
+      "action": "exit",
+      "pnl_pct": 7.027240122535466,
+      "via": "channel",
+      "balance": 1869.1637578974025,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1664740800000,
+      "side": "SHORT",
+      "price": 1275.32202,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1664798400000,
+      "side": "SHORT",
+      "price": 1320.8501150099999,
+      "action": "exit",
+      "pnl_pct": -3.621740213128467,
+      "via": "stop",
+      "balance": 1835.3156301629058,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1665432000000,
+      "side": "SHORT",
+      "price": 1288.91522,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1665705600000,
+      "side": "SHORT",
+      "price": 1329.94464,
+      "action": "exit",
+      "pnl_pct": -3.234869472057759,
+      "via": "stop",
+      "balance": 1758.1345456160482,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1666555200000,
+      "side": "LONG",
+      "price": 1363.44,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1666612800000,
+      "side": "LONG",
+      "price": 1329.546894,
+      "action": "exit",
+      "pnl_pct": -2.534585110190886,
+      "via": "stop",
+      "balance": 1713.5731292057415,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1666785600000,
+      "side": "LONG",
+      "price": 1566.95,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1666929600000,
       "side": "LONG",
-      "price": 20042.527056666673,
+      "price": 1492.47339,
       "action": "exit",
-      "pnl_pct": -2.7354434559012297,
-      "via": "stop",
-      "balance": 2271.667770940233
-    },
-    {
-      "time": 1667606400000,
-      "side": "LONG",
-      "price": 21436.5,
-      "action": "entry"
-    },
-    {
-      "time": 1667764800000,
-      "side": "LONG",
-      "price": 20889.550000000003,
-      "action": "exit",
-      "pnl_pct": -2.5514892822988693,
+      "pnl_pct": -4.752966591148406,
       "via": "channel",
-      "balance": 2213.7064112352555
+      "balance": 1607.6939033558826,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1667865600000,
+      "time": 1668931200000,
       "side": "SHORT",
-      "price": 20130.5297,
-      "action": "entry"
+      "price": 1166.19661,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1667923200000,
+      "time": 1669161600000,
       "side": "SHORT",
-      "price": 20609.829464849998,
+      "price": 1170.585,
       "action": "exit",
-      "pnl_pct": -2.4321756154151633,
-      "via": "stop",
-      "balance": 2159.8651837043094
-    },
-    {
-      "time": 1668024000000,
-      "side": "SHORT",
-      "price": 15897.0475,
-      "action": "entry"
-    },
-    {
-      "time": 1668081600000,
-      "side": "SHORT",
-      "price": 17681.84400375,
-      "action": "exit",
-      "pnl_pct": -11.282861477417182,
-      "via": "stop",
-      "balance": 1916.17058692799
-    },
-    {
-      "time": 1670932800000,
-      "side": "LONG",
-      "price": 17749.6,
-      "action": "entry"
-    },
-    {
-      "time": 1671105600000,
-      "side": "LONG",
-      "price": 17413.515553333335,
-      "action": "exit",
-      "pnl_pct": -1.9425049197730755,
-      "via": "stop",
-      "balance": 1878.948879005669
+      "pnl_pct": -0.4265125837268912,
+      "via": "channel",
+      "balance": 1598.7797815085728,
+      "filter_state": "STRONG"
     },
     {
       "time": 1671220800000,
       "side": "SHORT",
-      "price": 16615.787949999998,
-      "action": "entry"
+      "price": 1165.6169000000002,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1671537600000,
+      "time": 1671508800000,
       "side": "SHORT",
-      "price": 16919.35545,
+      "price": 1222.09164045,
       "action": "exit",
-      "pnl_pct": -1.8779212314143578,
-      "via": "channel",
-      "balance": 1843.6636990793993
+      "pnl_pct": -4.8975003661986,
+      "via": "stop",
+      "balance": 1496.989462158254,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1673366400000,
+      "time": 1673265600000,
       "side": "LONG",
-      "price": 17424.1,
-      "action": "entry"
+      "price": 1335.56,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1675094400000,
+      "time": 1674590400000,
       "side": "LONG",
-      "price": 22772.30815,
+      "price": 1555.212005,
       "action": "exit",
-      "pnl_pct": 30.694315057879617,
+      "pnl_pct": 16.44643482883586,
       "via": "channel",
-      "balance": 2409.5636434825874
+      "balance": 1743.1908584466514,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1676462400000,
+      "time": 1676491200000,
       "side": "LONG",
-      "price": 22798.1,
-      "action": "entry"
+      "price": 1675.0,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1677067200000,
       "side": "LONG",
-      "price": 23695.9461,
+      "price": 1609.9586180000001,
       "action": "exit",
-      "pnl_pct": 3.938249678701306,
-      "via": "channel",
-      "balance": 2504.458275930144
+      "pnl_pct": -3.9311020310740004,
+      "via": "stop",
+      "balance": 1674.6642472047588,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1677801600000,
       "side": "SHORT",
-      "price": 22295.14685,
-      "action": "entry"
+      "price": 1563.7477350000001,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1678636800000,
       "side": "SHORT",
-      "price": 20780.88525,
+      "price": 1512.8260349999998,
       "action": "exit",
-      "pnl_pct": 6.74526151216977,
+      "pnl_pct": 3.207992405935852,
       "via": "channel",
-      "balance": 2673.39053610481
+      "balance": 1701.5257981423845,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1679241600000,
+      "time": 1678795200000,
       "side": "LONG",
-      "price": 28245.3,
-      "action": "entry"
+      "price": 1770.28,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1679500800000,
+      "time": 1678824000000,
       "side": "LONG",
-      "price": 26640.77295,
+      "price": 1670.3430773333334,
       "action": "exit",
-      "pnl_pct": -5.727822963856618,
+      "pnl_pct": -5.692414580080682,
       "via": "stop",
-      "balance": 2520.263459064229
+      "balance": 1575.610524739906,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1681171200000,
+      "time": 1680595200000,
       "side": "LONG",
-      "price": 30105.8,
-      "action": "entry"
+      "price": 1864.18,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1681689600000,
+      "time": 1680840000000,
       "side": "LONG",
-      "price": 29951.516750000003,
+      "price": 1849.0849950000002,
       "action": "exit",
-      "pnl_pct": -0.5124701884686564,
+      "pnl_pct": -0.8097396710618021,
       "via": "channel",
-      "balance": 2507.347860165656
+      "balance": 1569.231352999784,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1682092800000,
-      "side": "SHORT",
-      "price": 27259.9632,
-      "action": "entry"
-    },
-    {
-      "time": 1682452800000,
-      "side": "SHORT",
-      "price": 28339.539221599996,
-      "action": "exit",
-      "pnl_pct": -4.012305048305484,
-      "via": "stop",
-      "balance": 2406.74541539365
-    },
-    {
-      "time": 1682510400000,
+      "time": 1681372800000,
       "side": "LONG",
-      "price": 29803.0,
-      "action": "entry"
+      "price": 1985.15,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1682524800000,
+      "time": 1681891200000,
       "side": "LONG",
-      "price": 27857.964050000002,
+      "price": 1979.7096500000002,
       "action": "exit",
-      "pnl_pct": -6.5730227527916325,
-      "via": "stop",
-      "balance": 2248.5494916380558
-    },
-    {
-      "time": 1682956800000,
-      "side": "SHORT",
-      "price": 27819.983050000003,
-      "action": "entry"
-    },
-    {
-      "time": 1683028800000,
-      "side": "SHORT",
-      "price": 28617.284541525,
-      "action": "exit",
-      "pnl_pct": -2.9173895981070475,
-      "via": "stop",
-      "balance": 2182.9505426607184
-    },
-    {
-      "time": 1683864000000,
-      "side": "SHORT",
-      "price": 26280.95295,
-      "action": "entry"
-    },
-    {
-      "time": 1684065600000,
-      "side": "SHORT",
-      "price": 27084.935699999998,
-      "action": "exit",
-      "pnl_pct": -3.1107395307415273,
+      "pnl_pct": -0.2740523386142031,
       "via": "channel",
-      "balance": 2115.0446371936346
+      "balance": 1564.9308377786206,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1686772800000,
-      "side": "SHORT",
-      "price": 25103.342050000003,
-      "action": "entry"
+      "time": 1683288000000,
+      "side": "LONG",
+      "price": 1952.83,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1686859200000,
-      "side": "SHORT",
-      "price": 25741.366301025002,
+      "time": 1683374400000,
+      "side": "LONG",
+      "price": 1875.2419100000002,
       "action": "exit",
-      "pnl_pct": -2.592887319305617,
+      "pnl_pct": -4.021099756702335,
       "via": "stop",
-      "balance": 2060.203912998187
+      "balance": 1533.4671227233825,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1687291200000,
-      "side": "LONG",
-      "price": 28290.6,
-      "action": "entry"
-    },
-    {
-      "time": 1688544000000,
-      "side": "LONG",
-      "price": 30379.8025,
-      "action": "exit",
-      "pnl_pct": 7.384793889136332,
-      "via": "channel",
-      "balance": 2212.345725669025
-    },
-    {
-      "time": 1689264000000,
-      "side": "LONG",
-      "price": 31600.6,
-      "action": "entry"
-    },
-    {
-      "time": 1689350400000,
-      "side": "LONG",
-      "price": 30084.850050000005,
-      "action": "exit",
-      "pnl_pct": -4.8441639005943165,
-      "via": "stop",
-      "balance": 2105.176072669825
-    },
-    {
-      "time": 1691496000000,
-      "side": "LONG",
-      "price": 29517.5,
-      "action": "entry"
-    },
-    {
-      "time": 1691956800000,
-      "side": "LONG",
-      "price": 29278.65335,
-      "action": "exit",
-      "pnl_pct": -0.809169645125771,
-      "via": "channel",
-      "balance": 2088.1416269133297
-    },
-    {
-      "time": 1692230400000,
+      "time": 1685980800000,
       "side": "SHORT",
-      "price": 28629.17825,
-      "action": "entry"
+      "price": 1804.57726,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1686052800000,
+      "side": "SHORT",
+      "price": 1845.47420263,
+      "action": "exit",
+      "pnl_pct": -2.317448094777902,
+      "via": "stop",
+      "balance": 1497.9298181037839,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1688673600000,
+      "side": "SHORT",
+      "price": 1843.89759,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1689004800000,
+      "side": "SHORT",
+      "price": 1900.399725,
+      "action": "exit",
+      "pnl_pct": -3.1158352021111937,
+      "via": "stop",
+      "balance": 1474.593305816085,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1692216000000,
+      "side": "SHORT",
+      "price": 1806.286405,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1692806400000,
       "side": "SHORT",
-      "price": 26628.5076,
+      "price": 1687.2131849999998,
       "action": "exit",
-      "pnl_pct": 6.941693255701018,
+      "pnl_pct": 6.545428845941899,
       "via": "channel",
-      "balance": 2233.0940133982576
+      "balance": 1571.111761415299,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1693324800000,
-      "side": "LONG",
-      "price": 27820.0,
-      "action": "entry"
-    },
-    {
-      "time": 1693396800000,
-      "side": "LONG",
-      "price": 27178.404000000002,
-      "action": "exit",
-      "pnl_pct": -2.3550625837332864,
-      "via": "stop",
-      "balance": 2180.5032518291273
-    },
-    {
-      "time": 1694433600000,
+      "time": 1694419200000,
       "side": "SHORT",
-      "price": 25089.94875,
-      "action": "entry"
+      "price": 1585.06707,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1694476800000,
+      "time": 1694505600000,
       "side": "SHORT",
-      "price": 25801.0941,
+      "price": 1610.9254635349998,
       "action": "exit",
-      "pnl_pct": -2.885826343309185,
+      "pnl_pct": -1.682216462903328,
       "via": "stop",
-      "balance": 2117.577714571129
+      "balance": 1544.6822607141603,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1695024000000,
-      "side": "LONG",
-      "price": 27184.7,
-      "action": "entry"
-    },
-    {
-      "time": 1695052800000,
-      "side": "LONG",
-      "price": 26789.798400000003,
-      "action": "exit",
-      "pnl_pct": -1.5019102844520915,
-      "via": "stop",
-      "balance": 2085.7735970947197
-    },
-    {
-      "time": 1695585600000,
+      "time": 1695283200000,
       "side": "SHORT",
-      "price": 26219.283800000005,
-      "action": "entry"
+      "price": 1593.292955,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1695801600000,
       "side": "SHORT",
-      "price": 26769.1779,
+      "price": 1629.7727674774999,
       "action": "exit",
-      "pnl_pct": -2.148362971654812,
+      "pnl_pct": -2.340756380753223,
       "via": "stop",
-      "balance": 2040.963609462184
+      "balance": 1508.5250121341303,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1695902400000,
       "side": "LONG",
-      "price": 27012.3,
-      "action": "entry"
+      "price": 1652.02,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1696838400000,
+      "time": 1696507200000,
       "side": "LONG",
-      "price": 27442.172050000005,
+      "price": 1613.7114073333335,
       "action": "exit",
-      "pnl_pct": 1.591393735446465,
-      "via": "channel",
-      "balance": 2073.443376485907
-    },
-    {
-      "time": 1696982400000,
-      "side": "SHORT",
-      "price": 26987.199650000002,
-      "action": "entry"
-    },
-    {
-      "time": 1697385600000,
-      "side": "SHORT",
-      "price": 27043.615049999997,
-      "action": "exit",
-      "pnl_pct": -0.2591746187748684,
-      "via": "channel",
-      "balance": 2068.069537519387
-    },
-    {
-      "time": 1697428800000,
-      "side": "LONG",
-      "price": 27837.2,
-      "action": "entry"
-    },
-    {
-      "time": 1698422400000,
-      "side": "LONG",
-      "price": 33688.64725,
-      "action": "exit",
-      "pnl_pct": 21.02024359490179,
-      "via": "channel",
-      "balance": 2502.782792017921
-    },
-    {
-      "time": 1699488000000,
-      "side": "LONG",
-      "price": 36455.5,
-      "action": "entry"
-    },
-    {
-      "time": 1699545600000,
-      "side": "LONG",
-      "price": 35465.81155666667,
-      "action": "exit",
-      "pnl_pct": -2.7634032919306715,
+      "pnl_pct": -2.3677101454034744,
       "via": "stop",
-      "balance": 2433.6208099534238
+      "balance": 1462.092262448407,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1698019200000,
+      "side": "LONG",
+      "price": 1693.62,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1699977600000,
+      "side": "LONG",
+      "price": 1978.7701200000001,
+      "action": "exit",
+      "pnl_pct": 16.83672370425481,
+      "via": "channel",
+      "balance": 1782.1112273370513,
+      "filter_state": "STRONG"
     },
     {
       "time": 1701532800000,
       "side": "LONG",
-      "price": 39416.4,
-      "action": "entry"
+      "price": 2159.1,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1702252800000,
       "side": "LONG",
-      "price": 42291.6436,
+      "price": 2250.184345,
       "action": "exit",
-      "pnl_pct": 7.294536284389243,
+      "pnl_pct": 4.21862558473439,
       "via": "channel",
-      "balance": 2611.142162959924
+      "balance": 1857.291827521916,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1702944000000,
-      "side": "LONG",
-      "price": 43100.1,
-      "action": "entry"
+      "time": 1702886400000,
+      "side": "SHORT",
+      "price": 2141.9784750000003,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1703001600000,
-      "side": "LONG",
-      "price": 41816.87443666667,
+      "time": 1702929600000,
+      "side": "SHORT",
+      "price": 2221.59024,
       "action": "exit",
-      "pnl_pct": -3.02580168388831,
+      "pnl_pct": -3.7686240425640665,
       "via": "stop",
-      "balance": 2532.134179424365
+      "balance": 1787.2974811693477,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1703073600000,
+      "time": 1703232000000,
       "side": "LONG",
-      "price": 44079.0,
-      "action": "entry"
+      "price": 2315.06,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1703448000000,
       "side": "LONG",
-      "price": 42685.41994666667,
+      "price": 2264.297285,
       "action": "exit",
-      "pnl_pct": -3.209945999874516,
-      "via": "stop",
-      "balance": 2450.854039620477
+      "pnl_pct": -2.1927170354116026,
+      "via": "channel",
+      "balance": 1767.7022929978064,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1704124800000,
+      "time": 1703678400000,
       "side": "LONG",
-      "price": 43556.2,
-      "action": "entry"
+      "price": 2345.01,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1704283200000,
+      "time": 1703880000000,
       "side": "LONG",
-      "price": 42609.577886666666,
+      "price": 2275.8315150000003,
       "action": "exit",
-      "pnl_pct": -2.2222238285381284,
+      "pnl_pct": -2.9985301591020046,
       "via": "stop",
-      "balance": 2396.3905771493414
+      "balance": 1698.7956807055264,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1705593600000,
-      "side": "SHORT",
-      "price": 40993.6929,
-      "action": "entry"
+      "time": 1704902400000,
+      "side": "LONG",
+      "price": 2478.06,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1705694400000,
-      "side": "SHORT",
-      "price": 42198.18144645,
+      "time": 1705089600000,
+      "side": "LONG",
+      "price": 2522.0383500000003,
       "action": "exit",
-      "pnl_pct": -2.98972379723319,
-      "via": "stop",
-      "balance": 2324.7451177896537
+      "pnl_pct": 1.7747088448221722,
+      "via": "channel",
+      "balance": 1728.9443579064646,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1705939200000,
+      "time": 1705910400000,
       "side": "SHORT",
-      "price": 39792.59375,
-      "action": "entry"
+      "price": 2379.8095000000003,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1706256000000,
       "side": "SHORT",
-      "price": 41292.636,
+      "price": 2254.236555,
       "action": "exit",
-      "pnl_pct": -3.8215626402165817,
+      "pnl_pct": 5.229211114647662,
+      "via": "channel",
+      "balance": 1846.4775535950985,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1706616000000,
+      "side": "LONG",
+      "price": 2340.43,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1706688000000,
+      "side": "LONG",
+      "price": 2280.8223516666667,
+      "action": "exit",
+      "pnl_pct": -2.5955695999683384,
       "via": "stop",
-      "balance": 2235.903526887945
+      "balance": 1784.1729605283388,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1706414400000,
+      "time": 1707235200000,
       "side": "LONG",
-      "price": 42369.9,
-      "action": "entry"
-    },
-    {
-      "time": 1706745600000,
-      "side": "LONG",
-      "price": 41977.001000000004,
-      "action": "exit",
-      "pnl_pct": -0.9273068853124449,
-      "via": "channel",
-      "balance": 2215.1698395341696
-    },
-    {
-      "time": 1707350400000,
-      "side": "LONG",
-      "price": 44523.6,
-      "action": "entry"
-    },
-    {
-      "time": 1708171200000,
-      "side": "LONG",
-      "price": 50987.8933,
-      "action": "exit",
-      "pnl_pct": 14.518801938747103,
-      "via": "channel",
-      "balance": 2536.7859611429976
-    },
-    {
-      "time": 1708963200000,
-      "side": "LONG",
-      "price": 54531.3,
-      "action": "entry"
+      "price": 2377.85,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1709654400000,
       "side": "LONG",
-      "price": 61479.4449,
+      "price": 3376.0411350000004,
       "action": "exit",
-      "pnl_pct": 12.741572087956824,
+      "pnl_pct": 41.97872594991276,
       "via": "channel",
-      "balance": 2860.0123730992013
+      "balance": 2158.659499314657,
+      "filter_state": "WEAK"
     },
     {
       "time": 1711368000000,
       "side": "LONG",
-      "price": 69844.6,
-      "action": "entry"
+      "price": 3584.48,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1711540800000,
       "side": "LONG",
-      "price": 68887.539,
+      "price": 3515.5413500000004,
       "action": "exit",
-      "pnl_pct": -1.3702720038485459,
+      "pnl_pct": -1.9232538610900214,
       "via": "channel",
-      "balance": 2820.8224242440183
+      "balance": 2117.1429971463012,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1712548800000,
-      "side": "LONG",
-      "price": 70745.4,
-      "action": "entry"
-    },
-    {
-      "time": 1712664000000,
-      "side": "LONG",
-      "price": 69053.20279333333,
-      "action": "exit",
-      "pnl_pct": -2.4407333245553238,
-      "via": "stop",
-      "balance": 2751.973671308965
-    },
-    {
-      "time": 1713974400000,
+      "time": 1712016000000,
       "side": "SHORT",
-      "price": 63928.919550000006,
-      "action": "entry"
+      "price": 3366.126095,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1714694400000,
+      "time": 1712520000000,
       "side": "SHORT",
-      "price": 59717.74395,
+      "price": 3457.7179949999995,
       "action": "exit",
-      "pnl_pct": 6.5405481909487,
+      "pnl_pct": -2.772374570223247,
       "via": "channel",
-      "balance": 2931.967835483148
+      "balance": 2087.795430112228,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1715774400000,
+      "time": 1712592000000,
       "side": "LONG",
-      "price": 64685.5,
-      "action": "entry"
+      "price": 3705.66,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1716134400000,
+      "time": 1712649600000,
       "side": "LONG",
-      "price": 65969.89855,
+      "price": 3582.3492626666666,
       "action": "exit",
-      "pnl_pct": 1.9856050428612257,
+      "pnl_pct": -3.375944280503894,
+      "via": "stop",
+      "balance": 2052.55402490648,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1715112000000,
+      "side": "SHORT",
+      "price": 3003.0477250000004,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1715587200000,
+      "side": "SHORT",
+      "price": 2966.072295,
+      "action": "exit",
+      "pnl_pct": 1.1818544097058097,
       "via": "channel",
-      "balance": 2990.1851366795704
+      "balance": 2084.089685237917,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1716235200000,
+      "time": 1715947200000,
       "side": "LONG",
-      "price": 71466.5,
-      "action": "entry"
+      "price": 3109.85,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1716307200000,
+      "time": 1716120000000,
       "side": "LONG",
-      "price": 69283.04115,
+      "price": 3074.6019300000003,
       "action": "exit",
-      "pnl_pct": -3.1036682340267827,
-      "via": "stop",
-      "balance": 2897.379710453856
+      "pnl_pct": -1.133433123784094,
+      "via": "channel",
+      "balance": 2060.4679224160627,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1717588800000,
+      "time": 1716220800000,
       "side": "LONG",
-      "price": 71625.1,
-      "action": "entry"
+      "price": 3438.29,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1717776000000,
+      "time": 1716984000000,
       "side": "LONG",
-      "price": 69252.5564,
+      "price": 3761.15848,
       "action": "exit",
-      "pnl_pct": -3.360766789453907,
-      "via": "stop",
-      "balance": 2800.0055353805474
+      "pnl_pct": 9.390379520052122,
+      "via": "channel",
+      "balance": 2311.999407561005,
+      "filter_state": "STRONG"
     },
     {
       "time": 1718078400000,
       "side": "SHORT",
-      "price": 67548.209,
-      "action": "entry"
+      "price": 3533.47238,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1718193600000,
       "side": "SHORT",
-      "price": 69772.86899999999,
+      "price": 3619.42881,
       "action": "exit",
-      "pnl_pct": -3.345112949542764,
+      "pnl_pct": -2.4838753576123045,
       "via": "stop",
-      "balance": 2706.3421876286184
+      "balance": 2237.3440689426893,
+      "filter_state": "STRONG"
     },
     {
       "time": 1718380800000,
       "side": "SHORT",
-      "price": 65482.142550000004,
-      "action": "entry"
+      "price": 3403.507395,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1718856000000,
+      "time": 1718424000000,
       "side": "SHORT",
-      "price": 65864.31569999999,
+      "price": 3538.0141846975,
       "action": "exit",
-      "pnl_pct": -0.6339465478685221,
-      "via": "channel",
-      "balance": 2689.185424756637
-    },
-    {
-      "time": 1718956800000,
-      "side": "SHORT",
-      "price": 63713.627250000005,
-      "action": "entry"
-    },
-    {
-      "time": 1719763200000,
-      "side": "SHORT",
-      "price": 62047.8084,
-      "action": "exit",
-      "pnl_pct": 2.5658238223880923,
-      "via": "channel",
-      "balance": 2758.1851850132316
-    },
-    {
-      "time": 1719993600000,
-      "side": "SHORT",
-      "price": 60354.70755000001,
-      "action": "entry"
-    },
-    {
-      "time": 1720281600000,
-      "side": "SHORT",
-      "price": 57863.7174,
-      "action": "exit",
-      "pnl_pct": 4.079290444899312,
-      "via": "channel",
-      "balance": 2870.699569718105
-    },
-    {
-      "time": 1721073600000,
-      "side": "LONG",
-      "price": 64680.6,
-      "action": "entry"
-    },
-    {
-      "time": 1721102400000,
-      "side": "LONG",
-      "price": 62716.29283333333,
-      "action": "exit",
-      "pnl_pct": -3.085391356675323,
+      "pnl_pct": -4.004007217262638,
       "via": "stop",
-      "balance": 2782.1272533179067
+      "balance": 2120.8856255485875,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1721174400000,
-      "side": "LONG",
-      "price": 65662.8,
-      "action": "entry"
+      "time": 1719172800000,
+      "side": "SHORT",
+      "price": 3417.6703100000004,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1721304000000,
-      "side": "LONG",
-      "price": 63468.34995,
+      "time": 1719489600000,
+      "side": "SHORT",
+      "price": 3453.495885,
       "action": "exit",
-      "pnl_pct": -3.3419988943511383,
+      "pnl_pct": -1.0987948907328395,
       "via": "channel",
-      "balance": 2689.1485912725807
+      "balance": 2097.5814426567727,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1721592000000,
+      "time": 1721001600000,
       "side": "LONG",
-      "price": 68138.0,
-      "action": "entry"
+      "price": 3328.17,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1721707200000,
+      "time": 1721836800000,
       "side": "LONG",
-      "price": 66347.46300666667,
+      "price": 3360.53889,
       "action": "exit",
-      "pnl_pct": -2.676471493528135,
+      "pnl_pct": 0.9725732159114389,
+      "via": "channel",
+      "balance": 2124.102112537944,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1722600000000,
+      "side": "SHORT",
+      "price": 3035.991245,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1723132800000,
+      "side": "SHORT",
+      "price": 2573.5961549999997,
+      "action": "exit",
+      "pnl_pct": 15.188042750815029,
+      "via": "channel",
+      "balance": 2285.406880999558,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1724745600000,
+      "side": "SHORT",
+      "price": 2624.2772050000003,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1725897600000,
+      "side": "SHORT",
+      "price": 2350.444635,
+      "action": "exit",
+      "pnl_pct": 10.389785014246966,
+      "via": "channel",
+      "balance": 2594.0904011272173,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1726948800000,
+      "side": "LONG",
+      "price": 2611.4,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1727035200000,
+      "side": "LONG",
+      "price": 2526.7866413333336,
+      "action": "exit",
+      "pnl_pct": -3.288508869049675,
       "via": "stop",
-      "balance": 2617.1742958085565
+      "balance": 2483.191440341312,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1722081600000,
-      "side": "LONG",
-      "price": 68822.0,
-      "action": "entry"
+      "time": 1727784000000,
+      "side": "SHORT",
+      "price": 2522.27823,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1722110400000,
-      "side": "LONG",
-      "price": 67000.33640666667,
+      "time": 1728043200000,
+      "side": "SHORT",
+      "price": 2417.1979949999995,
       "action": "exit",
-      "pnl_pct": -2.6955726654607712,
+      "pnl_pct": 4.118143278773049,
+      "via": "channel",
+      "balance": 2585.4528217407956,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1728907200000,
+      "side": "LONG",
+      "price": 2634.95,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1728993600000,
+      "side": "LONG",
+      "price": 2562.8932456666666,
+      "action": "exit",
+      "pnl_pct": -2.783261942467845,
       "via": "stop",
-      "balance": 2546.6264608832757
-    },
-    {
-      "time": 1722470400000,
-      "side": "SHORT",
-      "price": 63880.84360000001,
-      "action": "entry"
-    },
-    {
-      "time": 1723118400000,
-      "side": "SHORT",
-      "price": 59420.99565,
-      "action": "exit",
-      "pnl_pct": 6.934978218563724,
-      "via": "channel",
-      "balance": 2723.234451253711
-    },
-    {
-      "time": 1725408000000,
-      "side": "SHORT",
-      "price": 56604.58355,
-      "action": "entry"
-    },
-    {
-      "time": 1725825600000,
-      "side": "SHORT",
-      "price": 54867.019799999995,
-      "action": "exit",
-      "pnl_pct": 3.0211626148131097,
-      "via": "channel",
-      "balance": 2805.507792408699
-    },
-    {
-      "time": 1726574400000,
-      "side": "LONG",
-      "price": 61103.0,
-      "action": "entry"
-    },
-    {
-      "time": 1726646400000,
-      "side": "LONG",
-      "price": 59352.94868,
-      "action": "exit",
-      "pnl_pct": -2.9126441639825114,
-      "via": "stop",
-      "balance": 2723.7933334230324
-    },
-    {
-      "time": 1726689600000,
-      "side": "LONG",
-      "price": 61735.3,
-      "action": "entry"
-    },
-    {
-      "time": 1727654400000,
-      "side": "LONG",
-      "price": 64507.63005000001,
-      "action": "exit",
-      "pnl_pct": 4.490672354390444,
-      "via": "channel",
-      "balance": 2846.1099676377908
-    },
-    {
-      "time": 1728259200000,
-      "side": "LONG",
-      "price": 63494.6,
-      "action": "entry"
-    },
-    {
-      "time": 1728331200000,
-      "side": "LONG",
-      "price": 62159.60465,
-      "action": "exit",
-      "pnl_pct": -2.1514579510539447,
-      "via": "stop",
-      "balance": 2784.8771084433088
-    },
-    {
-      "time": 1728489600000,
-      "side": "SHORT",
-      "price": 60983.19315,
-      "action": "entry"
-    },
-    {
-      "time": 1728648000000,
-      "side": "SHORT",
-      "price": 62249.109,
-      "action": "exit",
-      "pnl_pct": -2.1269072798007063,
-      "via": "channel",
-      "balance": 2725.6453544903247
-    },
-    {
-      "time": 1728892800000,
-      "side": "LONG",
-      "price": 64899.4,
-      "action": "entry"
-    },
-    {
-      "time": 1729512000000,
-      "side": "LONG",
-      "price": 67320.62285,
-      "action": "exit",
-      "pnl_pct": 3.730732256384494,
-      "via": "channel",
-      "balance": 2827.331884924941
+      "balance": 2549.4728595268093,
+      "filter_state": "WEAK"
     },
     {
       "time": 1730160000000,
       "side": "LONG",
-      "price": 70927.5,
-      "action": "entry"
+      "price": 2607.57,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1730376000000,
       "side": "LONG",
-      "price": 70603.38065,
+      "price": 2561.608555,
       "action": "exit",
-      "pnl_pct": -0.45697275386837766,
+      "pnl_pct": -1.7626159604536162,
       "via": "channel",
-      "balance": 2814.4117485494007
+      "balance": 2504.5354439973567,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1730851200000,
       "side": "LONG",
-      "price": 74367.1,
-      "action": "entry"
+      "price": 2579.04,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1731585600000,
+      "side": "LONG",
+      "price": 3077.710375,
+      "action": "exit",
+      "pnl_pct": 19.335503714560463,
+      "via": "channel",
+      "balance": 2988.799987803949,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1732363200000,
+      "side": "LONG",
+      "price": 3463.13,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1732449600000,
       "side": "LONG",
-      "price": 95938.4068,
+      "price": 3295.481435,
       "action": "exit",
-      "pnl_pct": 29.006518742831155,
-      "via": "channel",
-      "balance": 3630.774619892825
+      "pnl_pct": -4.888510747759112,
+      "via": "stop",
+      "balance": 2842.69217917113,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1732881600000,
+      "time": 1732737600000,
       "side": "LONG",
-      "price": 98076.2,
-      "action": "entry"
+      "price": 3655.88,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1733126400000,
       "side": "LONG",
-      "price": 95143.70435000001,
+      "price": 3590.413895,
       "action": "exit",
-      "pnl_pct": -3.0384983595774564,
-      "via": "stop",
-      "balance": 3520.4535926274266
-    },
-    {
-      "time": 1735560000000,
-      "side": "SHORT",
-      "price": 92035.45925,
-      "action": "entry"
-    },
-    {
-      "time": 1735574400000,
-      "side": "SHORT",
-      "price": 94447.2,
-      "action": "exit",
-      "pnl_pct": -2.6717832383846036,
-      "via": "stop",
-      "balance": 3426.394703624498
-    },
-    {
-      "time": 1735804800000,
-      "side": "LONG",
-      "price": 96715.4,
-      "action": "entry"
-    },
-    {
-      "time": 1736265600000,
-      "side": "LONG",
-      "price": 96385.08335000002,
-      "action": "exit",
-      "pnl_pct": -0.3415346987139368,
+      "pnl_pct": -1.790707162160683,
       "via": "channel",
-      "balance": 3414.6923767967237
+      "balance": 2791.787886720531,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1737115200000,
+      "time": 1733313600000,
       "side": "LONG",
-      "price": 103946.2,
-      "action": "entry"
+      "price": 3824.39,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1737316800000,
+      "time": 1733428800000,
       "side": "LONG",
-      "price": 100853.37475333334,
+      "price": 3659.2434630000002,
       "action": "exit",
-      "pnl_pct": -3.023897682935979,
+      "pnl_pct": -4.366062153122736,
       "via": "stop",
-      "balance": 3311.4355731353758
+      "balance": 2669.8966924029605,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1737345600000,
-      "side": "LONG",
-      "price": 107178.8,
-      "action": "entry"
+      "time": 1736251200000,
+      "side": "SHORT",
+      "price": 3459.4793950000003,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1737388800000,
-      "side": "LONG",
-      "price": 102218.62512000001,
+      "time": 1736942400000,
+      "side": "SHORT",
+      "price": 3334.616475,
       "action": "exit",
-      "pnl_pct": -4.675606230592852,
-      "via": "stop",
-      "balance": 3156.60588515579
-    },
-    {
-      "time": 1737950400000,
-      "side": "SHORT",
-      "price": 98946.80185,
-      "action": "entry"
-    },
-    {
-      "time": 1737979200000,
-      "side": "SHORT",
-      "price": 101399.823090925,
-      "action": "exit",
-      "pnl_pct": -2.530396605342675,
-      "via": "stop",
-      "balance": 3076.731236993761
-    },
-    {
-      "time": 1738454400000,
-      "side": "SHORT",
-      "price": 99111.21960000001,
-      "action": "entry"
-    },
-    {
-      "time": 1738598400000,
-      "side": "SHORT",
-      "price": 101882.81594999999,
-      "action": "exit",
-      "pnl_pct": -2.847874592616437,
-      "via": "stop",
-      "balance": 2989.109789812322
-    },
-    {
-      "time": 1740067200000,
-      "side": "LONG",
-      "price": 98370.0,
-      "action": "entry"
-    },
-    {
-      "time": 1740153600000,
-      "side": "LONG",
-      "price": 95199.87625,
-      "action": "exit",
-      "pnl_pct": -3.2710174850563907,
-      "via": "stop",
-      "balance": 2891.335485940029
-    },
-    {
-      "time": 1740398400000,
-      "side": "SHORT",
-      "price": 94248.75205,
-      "action": "entry"
-    },
-    {
-      "time": 1740916800000,
-      "side": "SHORT",
-      "price": 87433.79505,
-      "action": "exit",
-      "pnl_pct": 7.184411555390508,
+      "pnl_pct": 3.5610785215081804,
       "via": "channel",
-      "balance": 3099.0609266970105
+      "balance": 2793.4969453604654,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1741521600000,
-      "side": "SHORT",
-      "price": 82988.98475,
-      "action": "entry"
+      "time": 1738310400000,
+      "side": "LONG",
+      "price": 3334.22,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1741953600000,
-      "side": "SHORT",
-      "price": 84734.54609999999,
+      "time": 1738425600000,
+      "side": "LONG",
+      "price": 3193.58241,
       "action": "exit",
-      "pnl_pct": -2.154442330713814,
+      "pnl_pct": -4.265872774093956,
+      "via": "stop",
+      "balance": 2674.329919723187,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1738512000000,
+      "side": "SHORT",
+      "price": 2956.2811200000006,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1739390400000,
+      "side": "SHORT",
+      "price": 2738.5085699999995,
+      "action": "exit",
+      "pnl_pct": 7.32009582178619,
       "via": "channel",
-      "balance": 3032.2934462376384
+      "balance": 2870.0934324376217,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1742299200000,
+      "time": 1740427200000,
       "side": "SHORT",
-      "price": 81527.01610000001,
-      "action": "entry"
+      "price": 2511.013865,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1742385600000,
+      "time": 1740931200000,
       "side": "SHORT",
-      "price": 84735.64665,
+      "price": 2486.252505,
       "action": "exit",
-      "pnl_pct": -3.9876592120656467,
-      "via": "stop",
-      "balance": 2911.3759172918803
-    },
-    {
-      "time": 1742817600000,
-      "side": "LONG",
-      "price": 88283.6,
-      "action": "entry"
-    },
-    {
-      "time": 1742860800000,
-      "side": "LONG",
-      "price": 86434.16129999999,
-      "action": "exit",
-      "pnl_pct": -2.1438117418281046,
-      "via": "stop",
-      "balance": 2848.9614985282215
-    },
-    {
-      "time": 1743235200000,
-      "side": "SHORT",
-      "price": 82213.97245000002,
-      "action": "entry"
-    },
-    {
-      "time": 1743494400000,
-      "side": "SHORT",
-      "price": 84284.44027622501,
-      "action": "exit",
-      "pnl_pct": -2.569674065194744,
-      "via": "stop",
-      "balance": 2775.7524737731583
-    },
-    {
-      "time": 1743595200000,
-      "side": "LONG",
-      "price": 86709.5,
-      "action": "entry"
-    },
-    {
-      "time": 1743624000000,
-      "side": "LONG",
-      "price": 82443.85745000001,
-      "action": "exit",
-      "pnl_pct": -4.966980409368014,
-      "via": "stop",
-      "balance": 2637.8813921882975
-    },
-    {
-      "time": 1743998400000,
-      "side": "SHORT",
-      "price": 75046.55795000002,
-      "action": "entry"
-    },
-    {
-      "time": 1744027200000,
-      "side": "SHORT",
-      "price": 78483.8223,
-      "action": "exit",
-      "pnl_pct": -4.632492131400869,
-      "via": "stop",
-      "balance": 2515.681744259487
-    },
-    {
-      "time": 1745193600000,
-      "side": "LONG",
-      "price": 87166.6,
-      "action": "entry"
-    },
-    {
-      "time": 1746259200000,
-      "side": "LONG",
-      "price": 95847.65220000001,
-      "action": "exit",
-      "pnl_pct": 9.959149720190997,
+      "pnl_pct": 0.9365783359956399,
       "via": "channel",
-      "balance": 2766.2222556538018
+      "balance": 2883.5337690931437,
+      "filter_state": "WEAK"
     },
     {
-      "time": 1746561600000,
-      "side": "LONG",
-      "price": 96798.9,
-      "action": "entry"
+      "time": 1741046400000,
+      "side": "SHORT",
+      "price": 2072.513225,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1747051200000,
-      "side": "LONG",
-      "price": 102430.45915000001,
+      "time": 1741219200000,
+      "side": "SHORT",
+      "price": 2289.9343949999998,
       "action": "exit",
-      "pnl_pct": 5.817792505906592,
-      "via": "channel",
-      "balance": 2927.155326739949
+      "pnl_pct": -10.545974198426808,
+      "via": "stop",
+      "balance": 2579.4370418016565,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1747828800000,
-      "side": "LONG",
-      "price": 108936.6,
-      "action": "entry"
+      "time": 1741622400000,
+      "side": "SHORT",
+      "price": 1867.7256700000003,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1748433600000,
-      "side": "LONG",
-      "price": 107011.96725,
+      "time": 1742371200000,
+      "side": "SHORT",
+      "price": 2028.003495,
       "action": "exit",
-      "pnl_pct": -1.766745749362477,
+      "pnl_pct": -8.635761482145316,
+      "via": "stop",
+      "balance": 2356.6830112895605,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1743134400000,
+      "side": "SHORT",
+      "price": 1908.08548,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1743508800000,
+      "side": "SHORT",
+      "price": 1918.848945,
+      "action": "exit",
+      "pnl_pct": -0.614404833933977,
       "via": "channel",
-      "balance": 2875.439934427534
+      "balance": 2342.2034369476964,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1746705600000,
+      "side": "LONG",
+      "price": 2050.56,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1747584000000,
+      "side": "LONG",
+      "price": 2405.5766100000005,
+      "action": "exit",
+      "pnl_pct": 17.313153967696657,
+      "via": "channel",
+      "balance": 2747.712724223134,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1748332800000,
+      "side": "LONG",
+      "price": 2651.98,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1748563200000,
+      "side": "LONG",
+      "price": 2556.0506686666668,
+      "action": "exit",
+      "pnl_pct": -3.665439331154304,
+      "via": "stop",
+      "balance": 2646.996981322328,
+      "filter_state": "NORMAL"
+    },
+    {
+      "time": 1749153600000,
+      "side": "SHORT",
+      "price": 2411.6935500000004,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1749211200000,
+      "side": "SHORT",
+      "price": 2522.9450587750002,
+      "action": "exit",
+      "pnl_pct": -4.665336205596176,
+      "via": "stop",
+      "balance": 2523.5056727916594,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1749499200000,
       "side": "LONG",
-      "price": 110227.9,
-      "action": "entry"
+      "price": 2679.12,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1749556800000,
+      "time": 1749729600000,
       "side": "LONG",
-      "price": 108392.50330333333,
+      "price": 2716.890875,
       "action": "exit",
-      "pnl_pct": -1.7142355644394882,
+      "pnl_pct": 1.4098239347248411,
+      "via": "channel",
+      "balance": 2541.2941662762373,
+      "filter_state": "WEAK"
+    },
+    {
+      "time": 1751227200000,
+      "side": "LONG",
+      "price": 2499.25,
+      "action": "entry",
+      "filter_state": "WEAK",
+      "position_mult": 0.5,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1751284800000,
+      "side": "LONG",
+      "price": 2437.883781666667,
+      "action": "exit",
+      "pnl_pct": -2.5041332822968543,
       "via": "stop",
-      "balance": 2826.1481204374813
+      "balance": 2509.4754697668413,
+      "filter_state": "WEAK"
     },
     {
       "time": 1752076800000,
       "side": "LONG",
-      "price": 111718.8,
-      "action": "entry"
+      "price": 2763.56,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1752537600000,
+      "time": 1753156800000,
       "side": "LONG",
-      "price": 117150.5954,
+      "price": 3674.6017800000004,
       "action": "exit",
-      "pnl_pct": 4.8620244757373,
+      "pnl_pct": 32.96623847501051,
       "via": "channel",
-      "balance": 2963.5561337737413
-    },
-    {
-      "time": 1754064000000,
-      "side": "SHORT",
-      "price": 113221.86075,
-      "action": "entry"
-    },
-    {
-      "time": 1754236800000,
-      "side": "SHORT",
-      "price": 114316.1295,
-      "action": "exit",
-      "pnl_pct": -1.0169903589744933,
-      "via": "channel",
-      "balance": 2933.4170536104652
+      "balance": 3584.939037952637,
+      "filter_state": "STRONG"
     },
     {
       "time": 1754553600000,
       "side": "LONG",
-      "price": 116469.1,
-      "action": "entry"
+      "price": 3825.66,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1755172800000,
+      "time": 1755259200000,
       "side": "LONG",
-      "price": 118126.80705,
+      "price": 4426.50564,
       "action": "exit",
-      "pnl_pct": 1.423302017444968,
+      "pnl_pct": 15.705672746663332,
       "via": "channel",
-      "balance": 2975.1684377145775
+      "balance": 4316.8894694613255,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1755475200000,
-      "side": "SHORT",
-      "price": 115207.26755,
-      "action": "entry"
-    },
-    {
-      "time": 1755532800000,
-      "side": "SHORT",
-      "price": 116815.406063775,
-      "action": "exit",
-      "pnl_pct": -1.4465888052976572,
-      "via": "stop",
-      "balance": 2932.1299841558493
-    },
-    {
-      "time": 1756152000000,
-      "side": "SHORT",
-      "price": 110008.96800000001,
-      "action": "entry"
-    },
-    {
-      "time": 1756353600000,
-      "side": "SHORT",
-      "price": 113135.73959999999,
-      "action": "exit",
-      "pnl_pct": -2.893734779771691,
-      "via": "stop",
-      "balance": 2847.281919016217
-    },
-    {
-      "time": 1757620800000,
+      "time": 1757692800000,
       "side": "LONG",
-      "price": 115427.0,
-      "action": "entry"
+      "price": 4656.0,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1758297600000,
+      "time": 1757851200000,
       "side": "LONG",
-      "price": 115024.8588,
+      "price": 4577.92989,
       "action": "exit",
-      "pnl_pct": -0.34839439645836606,
+      "pnl_pct": -1.6767635309278277,
       "via": "channel",
-      "balance": 2837.3621483589927
+      "balance": 4222.790232678617,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1758513600000,
+      "time": 1758499200000,
       "side": "SHORT",
-      "price": 112398.1728,
-      "action": "entry"
+      "price": 4301.4681900000005,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1758715200000,
+      "time": 1759089600000,
       "side": "SHORT",
-      "price": 113718.3502264,
+      "price": 4141.619775,
       "action": "exit",
-      "pnl_pct": -1.2251667540654676,
-      "via": "stop",
-      "balance": 2802.5997306248605
+      "pnl_pct": 3.6679701492711723,
+      "via": "channel",
+      "balance": 4377.6809178796075,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1759147200000,
+      "time": 1759305600000,
       "side": "LONG",
-      "price": 113752.0,
-      "action": "entry"
+      "price": 4295.88,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1759838400000,
+      "time": 1759996800000,
       "side": "LONG",
-      "price": 121727.40585000001,
+      "price": 4368.8145,
       "action": "exit",
-      "pnl_pct": 7.011222527955561,
+      "pnl_pct": 1.6977778708902553,
       "via": "channel",
-      "balance": 2999.0962343068527
+      "balance": 4474.301205126137,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1760126400000,
+      "time": 1760097600000,
       "side": "SHORT",
-      "price": 112658.54255,
-      "action": "entry"
+      "price": 4098.42976,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1760284800000,
+      "time": 1760270400000,
       "side": "SHORT",
-      "price": 114345.84434999998,
+      "price": 4034.39619,
       "action": "exit",
-      "pnl_pct": -1.548487388040022,
+      "pnl_pct": 1.5131493384774097,
       "via": "channel",
-      "balance": 2952.655607363428
-    },
-    {
-      "time": 1760616000000,
-      "side": "SHORT",
-      "price": 108419.763,
-      "action": "entry"
-    },
-    {
-      "time": 1760860800000,
-      "side": "SHORT",
-      "price": 107784.4653,
-      "action": "exit",
-      "pnl_pct": 0.5362292737661631,
-      "via": "channel",
-      "balance": 2968.4886110836082
+      "balance": 4542.00406421299,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1761508800000,
       "side": "LONG",
-      "price": 114497.8,
-      "action": "entry"
+      "price": 4156.37,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1761681600000,
+      "time": 1761667200000,
       "side": "LONG",
-      "price": 112484.46296666667,
+      "price": 4035.2413700000006,
       "action": "exit",
-      "pnl_pct": -1.8075029893626287,
+      "pnl_pct": -2.962807507002727,
       "via": "stop",
-      "balance": 2914.833090699383
+      "balance": 4407.433226830119,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1762228800000,
+      "time": 1761753600000,
       "side": "SHORT",
-      "price": 104390.67855,
-      "action": "entry"
+      "price": 3901.5882300000003,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1762704000000,
+      "time": 1762689600000,
       "side": "SHORT",
-      "price": 104816.48205,
+      "price": 3515.33679,
       "action": "exit",
-      "pnl_pct": -0.45812323944716454,
+      "pnl_pct": 9.854778866071317,
       "via": "channel",
-      "balance": 2901.479562919793
+      "balance": 4972.078864456135,
+      "filter_state": "STRONG"
     },
     {
       "time": 1763049600000,
       "side": "SHORT",
-      "price": 98593.77845000001,
-      "action": "entry"
+      "price": 3194.6318850000002,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1763856000000,
       "side": "SHORT",
-      "price": 86304.1305,
+      "price": 2824.43151,
       "action": "exit",
-      "pnl_pct": 12.42114308879495,
+      "pnl_pct": 11.543973329618616,
       "via": "channel",
-      "balance": 3261.876491122203
+      "balance": 5546.054322496555,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1764547200000,
       "side": "SHORT",
-      "price": 86276.0404,
-      "action": "entry"
+      "price": 2823.3876000000005,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1764676800000,
       "side": "SHORT",
-      "price": 90854.60459999999,
+      "price": 3007.052775,
       "action": "exit",
-      "pnl_pct": -5.359557770471871,
+      "pnl_pct": -6.558414208759814,
       "via": "stop",
-      "balance": 3087.054336179068
+      "balance": 5073.201143370758,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1765800000000,
+      "time": 1765296000000,
+      "side": "LONG",
+      "price": 3357.06,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1765411200000,
+      "side": "LONG",
+      "price": 3184.890758,
+      "action": "exit",
+      "pnl_pct": -5.175984091860811,
+      "via": "stop",
+      "balance": 4731.836634003095,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1765540800000,
       "side": "SHORT",
-      "price": 86953.10170000001,
-      "action": "entry"
+      "price": 3068.465,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1765972800000,
+      "time": 1765785600000,
       "side": "SHORT",
-      "price": 88824.66517085,
+      "price": 3157.267845,
       "action": "exit",
-      "pnl_pct": -2.203484387849432,
-      "via": "stop",
-      "balance": 3019.0315758369334
-    },
-    {
-      "time": 1767614400000,
-      "side": "LONG",
-      "price": 93899.9,
-      "action": "entry"
-    },
-    {
-      "time": 1767715200000,
-      "side": "LONG",
-      "price": 92016.1689,
-      "action": "exit",
-      "pnl_pct": -2.0550780053056847,
-      "via": "stop",
-      "balance": 2956.9881219486747
-    },
-    {
-      "time": 1768334400000,
-      "side": "LONG",
-      "price": 95375.2,
-      "action": "entry"
-    },
-    {
-      "time": 1768564800000,
-      "side": "LONG",
-      "price": 94490.23125000001,
-      "action": "exit",
-      "pnl_pct": -0.9278814094229794,
+      "pnl_pct": -2.9455205985506288,
       "via": "channel",
-      "balance": 2929.5507788862674
+      "balance": 4550.646244435472,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1768881600000,
-      "side": "SHORT",
-      "price": 91090.53195,
-      "action": "entry"
+      "time": 1767571200000,
+      "side": "LONG",
+      "price": 3184.74,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1769544000000,
-      "side": "SHORT",
-      "price": 89242.3989,
+      "time": 1767787200000,
+      "side": "LONG",
+      "price": 3161.9482350000003,
       "action": "exit",
-      "pnl_pct": 1.9798869214852552,
+      "pnl_pct": -0.7156554381205212,
       "via": "channel",
-      "balance": 2987.552571615706
+      "balance": 4508.309212922163,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1769731200000,
+      "time": 1770321600000,
       "side": "SHORT",
-      "price": 82599.57955,
-      "action": "entry"
+      "price": 1824.0375250000002,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1770984000000,
+      "time": 1770393600000,
       "side": "SHORT",
-      "price": 68686.326,
+      "price": 2066.182575,
       "action": "exit",
-      "pnl_pct": 16.802619677291588,
-      "via": "channel",
-      "balance": 3489.5396678834377
-    },
-    {
-      "time": 1771891200000,
-      "side": "SHORT",
-      "price": 63538.71475000001,
-      "action": "entry"
-    },
-    {
-      "time": 1771977600000,
-      "side": "SHORT",
-      "price": 65646.58830737502,
-      "action": "exit",
-      "pnl_pct": -3.3691478963787103,
+      "pnl_pct": -13.33188899672145,
       "via": "stop",
-      "balance": 3371.971915569642
+      "balance": 3726.953599057689,
+      "filter_state": "STRONG"
     }
   ],
   "trades_last_20": [
     {
+      "time": 1759305600000,
+      "side": "LONG",
+      "price": 4295.88,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1759996800000,
+      "side": "LONG",
+      "price": 4368.8145,
+      "action": "exit",
+      "pnl_pct": 1.6977778708902553,
+      "via": "channel",
+      "balance": 4474.301205126137,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1760097600000,
+      "side": "SHORT",
+      "price": 4098.42976,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1760270400000,
+      "side": "SHORT",
+      "price": 4034.39619,
+      "action": "exit",
+      "pnl_pct": 1.5131493384774097,
+      "via": "channel",
+      "balance": 4542.00406421299,
+      "filter_state": "NORMAL"
+    },
+    {
       "time": 1761508800000,
       "side": "LONG",
-      "price": 114497.8,
-      "action": "entry"
+      "price": 4156.37,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1761681600000,
+      "time": 1761667200000,
       "side": "LONG",
-      "price": 112484.46296666667,
+      "price": 4035.2413700000006,
       "action": "exit",
-      "pnl_pct": -1.8075029893626287,
+      "pnl_pct": -2.962807507002727,
       "via": "stop",
-      "balance": 2914.833090699383
+      "balance": 4407.433226830119,
+      "filter_state": "NORMAL"
     },
     {
-      "time": 1762228800000,
+      "time": 1761753600000,
       "side": "SHORT",
-      "price": 104390.67855,
-      "action": "entry"
+      "price": 3901.5882300000003,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1762704000000,
+      "time": 1762689600000,
       "side": "SHORT",
-      "price": 104816.48205,
+      "price": 3515.33679,
       "action": "exit",
-      "pnl_pct": -0.45812323944716454,
+      "pnl_pct": 9.854778866071317,
       "via": "channel",
-      "balance": 2901.479562919793
+      "balance": 4972.078864456135,
+      "filter_state": "STRONG"
     },
     {
       "time": 1763049600000,
       "side": "SHORT",
-      "price": 98593.77845000001,
-      "action": "entry"
+      "price": 3194.6318850000002,
+      "action": "entry",
+      "filter_state": "NORMAL",
+      "position_mult": 1.0,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1763856000000,
       "side": "SHORT",
-      "price": 86304.1305,
+      "price": 2824.43151,
       "action": "exit",
-      "pnl_pct": 12.42114308879495,
+      "pnl_pct": 11.543973329618616,
       "via": "channel",
-      "balance": 3261.876491122203
+      "balance": 5546.054322496555,
+      "filter_state": "NORMAL"
     },
     {
       "time": 1764547200000,
       "side": "SHORT",
-      "price": 86276.0404,
-      "action": "entry"
+      "price": 2823.3876000000005,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
       "time": 1764676800000,
       "side": "SHORT",
-      "price": 90854.60459999999,
+      "price": 3007.052775,
       "action": "exit",
-      "pnl_pct": -5.359557770471871,
+      "pnl_pct": -6.558414208759814,
       "via": "stop",
-      "balance": 3087.054336179068
+      "balance": 5073.201143370758,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1765800000000,
+      "time": 1765296000000,
+      "side": "LONG",
+      "price": 3357.06,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
+    },
+    {
+      "time": 1765411200000,
+      "side": "LONG",
+      "price": 3184.890758,
+      "action": "exit",
+      "pnl_pct": -5.175984091860811,
+      "via": "stop",
+      "balance": 4731.836634003095,
+      "filter_state": "STRONG"
+    },
+    {
+      "time": 1765540800000,
       "side": "SHORT",
-      "price": 86953.10170000001,
-      "action": "entry"
+      "price": 3068.465,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1765972800000,
+      "time": 1765785600000,
       "side": "SHORT",
-      "price": 88824.66517085,
+      "price": 3157.267845,
       "action": "exit",
-      "pnl_pct": -2.203484387849432,
-      "via": "stop",
-      "balance": 3019.0315758369334
-    },
-    {
-      "time": 1767614400000,
-      "side": "LONG",
-      "price": 93899.9,
-      "action": "entry"
-    },
-    {
-      "time": 1767715200000,
-      "side": "LONG",
-      "price": 92016.1689,
-      "action": "exit",
-      "pnl_pct": -2.0550780053056847,
-      "via": "stop",
-      "balance": 2956.9881219486747
-    },
-    {
-      "time": 1768334400000,
-      "side": "LONG",
-      "price": 95375.2,
-      "action": "entry"
-    },
-    {
-      "time": 1768564800000,
-      "side": "LONG",
-      "price": 94490.23125000001,
-      "action": "exit",
-      "pnl_pct": -0.9278814094229794,
+      "pnl_pct": -2.9455205985506288,
       "via": "channel",
-      "balance": 2929.5507788862674
+      "balance": 4550.646244435472,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1768881600000,
-      "side": "SHORT",
-      "price": 91090.53195,
-      "action": "entry"
+      "time": 1767571200000,
+      "side": "LONG",
+      "price": 3184.74,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1769544000000,
-      "side": "SHORT",
-      "price": 89242.3989,
+      "time": 1767787200000,
+      "side": "LONG",
+      "price": 3161.9482350000003,
       "action": "exit",
-      "pnl_pct": 1.9798869214852552,
+      "pnl_pct": -0.7156554381205212,
       "via": "channel",
-      "balance": 2987.552571615706
+      "balance": 4508.309212922163,
+      "filter_state": "STRONG"
     },
     {
-      "time": 1769731200000,
+      "time": 1770321600000,
       "side": "SHORT",
-      "price": 82599.57955,
-      "action": "entry"
+      "price": 1824.0375250000002,
+      "action": "entry",
+      "filter_state": "STRONG",
+      "position_mult": 1.3,
+      "reason_ko": "정상 진입"
     },
     {
-      "time": 1770984000000,
+      "time": 1770393600000,
       "side": "SHORT",
-      "price": 68686.326,
+      "price": 2066.182575,
       "action": "exit",
-      "pnl_pct": 16.802619677291588,
-      "via": "channel",
-      "balance": 3489.5396678834377
-    },
-    {
-      "time": 1771891200000,
-      "side": "SHORT",
-      "price": 63538.71475000001,
-      "action": "entry"
-    },
-    {
-      "time": 1771977600000,
-      "side": "SHORT",
-      "price": 65646.58830737502,
-      "action": "exit",
-      "pnl_pct": -3.3691478963787103,
+      "pnl_pct": -13.33188899672145,
       "via": "stop",
-      "balance": 3371.971915569642
+      "balance": 3726.953599057689,
+      "filter_state": "STRONG"
     }
   ]
 }

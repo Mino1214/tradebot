@@ -24,6 +24,7 @@ def run_backtest(
     adx_min: float | None = None,
     entry_len: int | None = None,
     exit_len: int | None = None,
+    cooldown_bars: int | None = None,
     slippage_bps: float = 0,
     fee_bps: float = 0,
 ) -> dict:
@@ -39,6 +40,8 @@ def run_backtest(
         params["entry_len"] = entry_len
     if exit_len is not None:
         params["exit_len"] = exit_len
+    if cooldown_bars is not None:
+        params["cooldown_bars"] = cooldown_bars
 
     if source == "db":
         try:
@@ -61,6 +64,7 @@ def run_backtest(
     breakout_atr_margin = params.get("breakout_atr_margin", 0.2)
     use_ema_slope = params.get("use_ema_slope", True)
     use_adx_rising = params.get("use_adx_rising", True)
+    cooldown_bars = int(params.get("cooldown_bars", 0))  # 청산 후 N봉 대기 (실전과 동일)
 
     start_idx = max(ema_len, entry_len, exit_len, dmi_len, atr_len) + 25
     position_side = None
@@ -72,6 +76,7 @@ def run_backtest(
     skip_entries_remaining = 0
     entry_filter_state = "NORMAL"
     entry_position_mult = 1.0
+    last_exit_bar_idx: int | None = None  # 청산 후 N봉 대기용 (실전 worker _in_cooldown과 동일)
 
     slip = 1 + (slippage_bps / 10000)  # 진입 시 불리, 청산 시 불리
     fee = fee_bps / 10000  # 한 번당
@@ -120,7 +125,7 @@ def run_backtest(
                 skip_entries_remaining = 2
             return {"time": t, "side": side, "price": exit_px, "action": "exit", "pnl_pct": pnl_pct, "via": via, "balance": balance, "filter_state": entry_filter_state}
 
-        # 1) 스탑 체결 (봉 중)
+        # 1) 스탑 체결 (봉 중) — 실전과 동일
         if position_side == "LONG" and stop_price is not None and low <= stop_price:
             exit_px = min(stop_price, close) * (1 - fee)
             pnl_pct = (exit_px - entry_price * (1 + fee)) / (entry_price * (1 + fee)) * 100
@@ -128,6 +133,7 @@ def run_backtest(
             position_side = None
             entry_price = 0.0
             stop_price = None
+            last_exit_bar_idx = i
             continue
         if position_side == "SHORT" and stop_price is not None and high >= stop_price:
             exit_px = max(stop_price, close) * (1 + fee)
@@ -136,9 +142,10 @@ def run_backtest(
             position_side = None
             entry_price = 0.0
             stop_price = None
+            last_exit_bar_idx = i
             continue
 
-        # 2) 청산 신호
+        # 2) 청산 신호 — 실전과 동일
         if action == LONG_EXIT and position_side == "LONG":
             exit_px = close * (1 - fee)
             pnl_pct = (exit_px - entry_price * slip) / (entry_price * slip) * 100
@@ -146,6 +153,7 @@ def run_backtest(
             position_side = None
             entry_price = 0.0
             stop_price = None
+            last_exit_bar_idx = i
             continue
         if action == SHORT_EXIT and position_side == "SHORT":
             exit_px = close * (1 + fee)
@@ -154,10 +162,17 @@ def run_backtest(
             position_side = None
             entry_price = 0.0
             stop_price = None
+            last_exit_bar_idx = i
             continue
 
-        # 3) 진입 (필터: 허용 시에만, 포지션 배율 적용)
-        if action == LONG_ENTRY and position_side is None:
+        # 청산 후 N봉 대기 (실전 worker _in_cooldown과 동일)
+        skip_entry_cooldown = (
+            last_exit_bar_idx is not None
+            and i <= last_exit_bar_idx + 1 + cooldown_bars
+        )
+
+        # 3) 진입 (필터 + 청산 후 쿨다운: 실전과 동일)
+        if action == LONG_ENTRY and position_side is None and not skip_entry_cooldown:
             if not filt.allowed:
                 if filt.reason == "consecutive_loss_cooldown":
                     skip_entries_remaining = max(0, skip_entries_remaining - 1)
@@ -169,7 +184,7 @@ def run_backtest(
             stop_price = entry_price - stop_mult * atr_val
             position_side = "LONG"
             trades.append({"time": t, "side": "LONG", "price": entry_price, "action": "entry", "filter_state": filt.state, "position_mult": filt.multiplier, "reason_ko": reason_to_ko(filt.reason)})
-        elif action == SHORT_ENTRY and position_side is None:
+        elif action == SHORT_ENTRY and position_side is None and not skip_entry_cooldown:
             if not filt.allowed:
                 if filt.reason == "consecutive_loss_cooldown":
                     skip_entries_remaining = max(0, skip_entries_remaining - 1)
@@ -237,6 +252,7 @@ def main():
     parser.add_argument("--adx-min", type=float, default=None, help="ADX minimum")
     parser.add_argument("--entry-len", type=int, default=None, help="Donchian entry length")
     parser.add_argument("--exit-len", type=int, default=None, help="Donchian exit length")
+    parser.add_argument("--cooldown-bars", type=int, default=None, help="청산 후 N봉 대기 (실전과 동일, 기본 params)")
     parser.add_argument("--slippage-bps", type=float, default=0, help="Slippage bps (e.g. 10 = 0.1%%)")
     parser.add_argument("--fee-bps", type=float, default=5, help="Fee one-way bps (e.g. 5 = 0.05%%)")
     args = parser.parse_args()
@@ -253,6 +269,7 @@ def main():
         adx_min=args.adx_min,
         entry_len=args.entry_len,
         exit_len=args.exit_len,
+        cooldown_bars=args.cooldown_bars,
         slippage_bps=args.slippage_bps,
         fee_bps=args.fee_bps,
     )

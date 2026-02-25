@@ -22,6 +22,7 @@ from app.services.adaptive_filter import (
     update_adaptive_filter_state_after_exit,
     update_adaptive_filter_state_after_skip,
 )
+from app.services.admin_state import is_new_entry_allowed
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -123,6 +124,9 @@ def process_one_event(db: Session, event: Event) -> bool:
     cooldown_bars = params.get("cooldown_bars", DEFAULT_PARAMS["cooldown_bars"])
     skip_entry_cooldown = _in_cooldown(db, symbol, close_time, tf, cooldown_bars)
 
+    # 관리자 레벨 신규 진입 게이트 (Emergency / New Entry OFF)
+    admin_allow_entry = is_new_entry_allowed(db)
+
     # Adaptive Filter: 거래 여부·규모만 조절 (진입/청산 규칙은 그대로)
     last_3_pnls, skip_remaining = get_adaptive_filter_state_from_db(db)
     adx = indicators.get("ADX")
@@ -146,7 +150,7 @@ def process_one_event(db: Session, event: Event) -> bool:
 
     notify_signal(symbol, tf, action, close_time)
 
-    if action == LONG_ENTRY and position_side is None and not skip_entry_cooldown:
+    if action == LONG_ENTRY and position_side is None and not skip_entry_cooldown and admin_allow_entry:
         if not filt.allowed:
             if filt.reason == "consecutive_loss_cooldown":
                 update_adaptive_filter_state_after_skip(db)
@@ -154,7 +158,7 @@ def process_one_event(db: Session, event: Event) -> bool:
             logger.info("Adaptive filter: skip LONG entry [Filter State: %s] [사유: %s]", filt.state, filt.reason_ko)
         else:
             execute_entry(db, symbol, "LONG", indicators, params, position_multiplier=filt.multiplier, filter_state=filt.state, filter_reason_ko=filt.reason_ko)
-    elif action == SHORT_ENTRY and position_side is None and not skip_entry_cooldown:
+    elif action == SHORT_ENTRY and position_side is None and not skip_entry_cooldown and admin_allow_entry:
         if not filt.allowed:
             if filt.reason == "consecutive_loss_cooldown":
                 update_adaptive_filter_state_after_skip(db)
