@@ -1,0 +1,16 @@
+{
+  "initial_capital_usdt": 1000,
+  "final_balance_usdt": 3371.97,
+  "growth_pct": 237.2,
+  "symbol": "BTCUSDT",
+  "tf": "4h",
+  "source": "db",
+  "bars": 14170,
+  "bars_used": 13945,
+  "trades_count": 188,
+  "wins": 58,
+  "losses": 130,
+  "win_rate_pct": 30.85,
+  "total_pnl_pct": 181.15,
+  "avg_pnl_per_trade_pct": 0.96
+}

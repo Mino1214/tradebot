@@ -1,0 +1,16 @@
+{
+  "initial_capital_usdt": 1000,
+  "final_balance_usdt": 240.55,
+  "growth_pct": -75.94,
+  "symbol": "ETHUSDT",
+  "tf": "1h",
+  "source": "db",
+  "bars": 54660,
+  "bars_used": 54435,
+  "trades_count": 748,
+  "wins": 227,
+  "losses": 521,
+  "win_rate_pct": 30.35,
+  "total_pnl_pct": -78.19,
+  "avg_pnl_per_trade_pct": -0.1
+}
